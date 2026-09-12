@@ -1,0 +1,38 @@
+{
+  "name": "gplan",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "typecheck": "tsc -b",
+    "test": "vitest run --maxWorkers=4 --exclude=e2e/**",
+    "build": "bun run typecheck && vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "test:e2e": "playwright test"
+  },
+  "dependencies": {
+    "@react-three/fiber": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "three": "latest",
+    "zod": "latest"
+  },
+  "devDependencies": {
+    "@playwright/test": "latest",
+    "@testing-library/jest-dom": "latest",
+    "@testing-library/react": "latest",
+    "@testing-library/user-event": "latest",
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "@types/three": "latest",
+    "@vitejs/plugin-react": "latest",
+    "jsdom": "latest",
+    "typescript": "latest",
+    "typescript-language-server": "^6.0.0",
+    "vite": "latest",
+    "vite-plugin-pwa": "latest",
+    "vitest": "latest"
+  }
+}
