@@ -1,0 +1,10 @@
+$ vitest run --maxWorkers=4 --exclude=e2e/** src/ui
+
+ RUN  v5.0.0 /home/norman/Repos/GPlan
+
+
+ Test Files  4 passed (4)
+      Tests  15 passed (15)
+   Start at  13:04:39
+   Duration  8.22s (tests 71%, environment 18%, transform 6%, setup 3%, import 3%)
+

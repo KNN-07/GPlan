@@ -1,0 +1,173 @@
+{
+  "receipts": [
+    {
+      "viewport": "desktop",
+      "screenshot": ".omo/evidence/ui-verification/ui-desktop-home.png"
+    },
+    {
+      "viewport": "desktop",
+      "screenshot": ".omo/evidence/ui-verification/ui-desktop-filtered.png"
+    },
+    {
+      "viewport": "desktop",
+      "coldReducedMotionCanvas": {
+        "sequence": 1,
+        "width": 499,
+        "height": 440,
+        "litPixels": 6374,
+        "highlightPixels": 208,
+        "fingerprint": 3619576631
+      }
+    },
+    {
+      "viewport": "desktop",
+      "screenshot": ".omo/evidence/ui-verification/ui-desktop-detail.png"
+    },
+    {
+      "viewport": "desktop",
+      "screenshot": ".omo/evidence/ui-verification/ui-desktop-detail-instructions.png"
+    },
+    {
+      "viewport": "desktop",
+      "screenshot": ".omo/evidence/ui-verification/ui-desktop-plan.png"
+    },
+    {
+      "viewport": "desktop",
+      "screenshot": ".omo/evidence/ui-verification/ui-desktop-swap.png"
+    },
+    {
+      "viewport": "desktop",
+      "screenshot": ".omo/evidence/ui-verification/ui-desktop-reloaded.png"
+    },
+    {
+      "viewport": "desktop",
+      "screenshot": ".omo/evidence/ui-verification/ui-desktop-settings.png"
+    },
+    {
+      "viewport": "desktop",
+      "screenshot": ".omo/evidence/ui-verification/ui-desktop-models.png"
+    },
+    {
+      "viewport": "desktop",
+      "screenshot": ".omo/evidence/ui-verification/ui-desktop-ai-preview.png"
+    },
+    {
+      "viewport": "desktop",
+      "screenshot": ".omo/evidence/ui-verification/ui-desktop-ai-accepted.png"
+    },
+    {
+      "viewport": "desktop",
+      "screenshot": ".omo/evidence/ui-verification/ui-desktop-import-error.png"
+    },
+    {
+      "viewport": "desktop",
+      "screenshot": ".omo/evidence/ui-verification/ui-desktop-local-request.png"
+    },
+    {
+      "viewport": "desktop",
+      "screenshot": ".omo/evidence/ui-verification/ui-desktop-local-plan.png"
+    },
+    {
+      "viewport": "desktop",
+      "screenshot": ".omo/evidence/ui-verification/ui-desktop-offline-ai.png"
+    },
+    {
+      "viewport": "desktop",
+      "screenshot": ".omo/evidence/ui-verification/ui-desktop-offline-manual.png"
+    },
+    {
+      "viewport": "desktop",
+      "workflow": "filter -> detail/focus/Escape -> add -> rename/prescription -> swap -> reload -> equipment -> explicit discovery fixture -> generation preview -> accept -> reload key cleared -> invalid import -> export download -> valid import -> local generation -> offline AI disabled -> offline manual creation",
+      "pageErrors": [],
+      "overflow": false,
+      "liveProvider": false
+    },
+    {
+      "viewport": "mobile",
+      "screenshot": ".omo/evidence/ui-verification/ui-mobile-home.png"
+    },
+    {
+      "viewport": "mobile",
+      "screenshot": ".omo/evidence/ui-verification/ui-mobile-filtered.png"
+    },
+    {
+      "viewport": "mobile",
+      "coldReducedMotionCanvas": {
+        "sequence": 1,
+        "width": 310,
+        "height": 320,
+        "litPixels": 3370,
+        "highlightPixels": 124,
+        "fingerprint": 110767349
+      }
+    },
+    {
+      "viewport": "mobile",
+      "screenshot": ".omo/evidence/ui-verification/ui-mobile-detail.png"
+    },
+    {
+      "viewport": "mobile",
+      "screenshot": ".omo/evidence/ui-verification/ui-mobile-detail-instructions.png"
+    },
+    {
+      "viewport": "mobile",
+      "screenshot": ".omo/evidence/ui-verification/ui-mobile-plan.png"
+    },
+    {
+      "viewport": "mobile",
+      "screenshot": ".omo/evidence/ui-verification/ui-mobile-swap.png"
+    },
+    {
+      "viewport": "mobile",
+      "screenshot": ".omo/evidence/ui-verification/ui-mobile-reloaded.png"
+    },
+    {
+      "viewport": "mobile",
+      "screenshot": ".omo/evidence/ui-verification/ui-mobile-settings.png"
+    },
+    {
+      "viewport": "mobile",
+      "screenshot": ".omo/evidence/ui-verification/ui-mobile-models.png"
+    },
+    {
+      "viewport": "mobile",
+      "screenshot": ".omo/evidence/ui-verification/ui-mobile-ai-preview.png"
+    },
+    {
+      "viewport": "mobile",
+      "screenshot": ".omo/evidence/ui-verification/ui-mobile-ai-accepted.png"
+    },
+    {
+      "viewport": "mobile",
+      "screenshot": ".omo/evidence/ui-verification/ui-mobile-import-error.png"
+    },
+    {
+      "viewport": "mobile",
+      "screenshot": ".omo/evidence/ui-verification/ui-mobile-local-request.png"
+    },
+    {
+      "viewport": "mobile",
+      "screenshot": ".omo/evidence/ui-verification/ui-mobile-local-plan.png"
+    },
+    {
+      "viewport": "mobile",
+      "screenshot": ".omo/evidence/ui-verification/ui-mobile-offline-ai.png"
+    },
+    {
+      "viewport": "mobile",
+      "screenshot": ".omo/evidence/ui-verification/ui-mobile-offline-manual.png"
+    },
+    {
+      "viewport": "mobile",
+      "screenshot": ".omo/evidence/ui-verification/ui-mobile-360-settings.png"
+    },
+    {
+      "viewport": "mobile",
+      "workflow": "filter -> detail/focus/Escape -> add -> rename/prescription -> swap -> reload -> equipment -> explicit discovery fixture -> generation preview -> accept -> reload key cleared -> invalid import -> export download -> valid import -> local generation -> offline AI disabled -> offline manual creation",
+      "pageErrors": [],
+      "overflow": false,
+      "liveProvider": false
+    }
+  ],
+  "browserClosed": true
+}

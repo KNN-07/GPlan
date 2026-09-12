@@ -1,0 +1,59 @@
+{
+  "phase": "after",
+  "measurements": [
+    {
+      "viewport": 375,
+      "pageWidth": 375,
+      "dialogClient": 335,
+      "dialogScroll": 335,
+      "gridWidth": 303,
+      "gridTrack": "303px",
+      "viewerWidth": 303,
+      "canvasWidth": 303
+    },
+    {
+      "viewport": 375,
+      "pageWidth": 375,
+      "chipRight": 375
+    },
+    {
+      "viewport": 360,
+      "pageWidth": 360,
+      "chipRight": 360
+    }
+  ],
+  "pageErrors": [],
+  "browserClosed": true,
+  "coldCanvas": {
+    "sequence": 1,
+    "width": 499,
+    "height": 440,
+    "litPixels": 10228,
+    "highlightPixels": 733,
+    "fingerprint": 1740266261
+  },
+  "desktopCanvas": {
+    "sequence": 3,
+    "width": 499,
+    "height": 440,
+    "litPixels": 10599,
+    "highlightPixels": 704,
+    "fingerprint": 1674155452
+  },
+  "resizedCanvas": {
+    "sequence": 4,
+    "width": 303,
+    "height": 320,
+    "litPixels": 5606,
+    "highlightPixels": 378,
+    "fingerprint": 3259816584
+  },
+  "sideCanvas": {
+    "sequence": 5,
+    "width": 303,
+    "height": 320,
+    "litPixels": 2188,
+    "highlightPixels": 140,
+    "fingerprint": 1348184942
+  }
+}

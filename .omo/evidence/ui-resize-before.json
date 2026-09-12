@@ -1,0 +1,17 @@
+{
+  "phase": "before",
+  "measurements": [
+    {
+      "viewport": 375,
+      "pageWidth": 375,
+      "dialogClient": 335,
+      "dialogScroll": 466,
+      "gridWidth": 303,
+      "gridTrack": "450px",
+      "viewerWidth": 450,
+      "canvasWidth": 450
+    }
+  ],
+  "pageErrors": [],
+  "browserClosed": true
+}

@@ -1,0 +1,77 @@
+{
+  "defects": [
+    {
+      "id": "UI-V1",
+      "action": "Import valid backup with one plan and activePlanId:null -> Plan shows Imported routine selected -> Add a movement -> first catalog Add -> View plan",
+      "expected": "Add to the displayed selected Imported routine",
+      "actual": "A second My training plan is created and activated; Imported routine stays empty",
+      "persisted": {
+        "schemaVersion": 1,
+        "gym": {
+          "availableEquipment": []
+        },
+        "plans": [
+          {
+            "id": "imported-plan",
+            "name": "Imported routine",
+            "days": [
+              {
+                "id": "imported-day",
+                "name": "Imported session",
+                "items": []
+              }
+            ],
+            "createdAt": "2026-09-12T00:00:00Z",
+            "updatedAt": "2026-09-12T00:00:00Z",
+            "source": "manual"
+          },
+          {
+            "id": "419654ce-5bf5-42fb-952c-4c7c39a97aa3",
+            "name": "My training plan",
+            "days": [
+              {
+                "id": "cb294f2c-0fec-4018-bf1b-3f27d5091f52",
+                "name": "Day 1",
+                "items": [
+                  {
+                    "id": "cf83f538-8f04-44a0-8793-b2460e1bc4b9",
+                    "exerciseId": "barbell-bench-press",
+                    "sets": 3,
+                    "prescription": {
+                      "kind": "reps",
+                      "min": 8,
+                      "max": 12
+                    },
+                    "restSeconds": 90
+                  }
+                ]
+              }
+            ],
+            "createdAt": "2026-09-12T06:07:13.963Z",
+            "updatedAt": "2026-09-12T06:07:13.963Z",
+            "source": "manual"
+          }
+        ],
+        "activePlanId": "419654ce-5bf5-42fb-952c-4c7c39a97aa3",
+        "aiPreferences": null
+      }
+    },
+    {
+      "id": "UI-V2",
+      "action": "Set OpenAI-compatible root URL http://provider.example/v1 and manual model example-model -> Save AI preferences -> Discover models",
+      "expected": "Reject unsupported provider root before reporting saved preferences",
+      "actual": "Preferences save successfully, but the real adapter immediately rejects discovery without HTTP",
+      "savedPreferences": {
+        "config": {
+          "provider": "openai-compatible",
+          "baseUrl": "http://provider.example/v1"
+        },
+        "modelId": "example-model"
+      },
+      "error": "provider: Use HTTPS (or localhost HTTP), without URL credentials, query parameters, or fragments.",
+      "requests": []
+    }
+  ],
+  "pageErrors": [],
+  "browserClosed": true
+}

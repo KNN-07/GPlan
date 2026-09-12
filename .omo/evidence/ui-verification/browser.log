@@ -1,0 +1,313 @@
+RUN browser-qa.mjs
+[
+  {
+    "viewport": "desktop",
+    "screenshot": ".omo/evidence/ui-verification/ui-desktop-home.png"
+  },
+  {
+    "viewport": "desktop",
+    "screenshot": ".omo/evidence/ui-verification/ui-desktop-filtered.png"
+  },
+  {
+    "viewport": "desktop",
+    "coldReducedMotionCanvas": {
+      "sequence": 1,
+      "width": 499,
+      "height": 440,
+      "litPixels": 6374,
+      "highlightPixels": 208,
+      "fingerprint": 3619576631
+    }
+  },
+  {
+    "viewport": "desktop",
+    "screenshot": ".omo/evidence/ui-verification/ui-desktop-detail.png"
+  },
+  {
+    "viewport": "desktop",
+    "screenshot": ".omo/evidence/ui-verification/ui-desktop-detail-instructions.png"
+  },
+  {
+    "viewport": "desktop",
+    "screenshot": ".omo/evidence/ui-verification/ui-desktop-plan.png"
+  },
+  {
+    "viewport": "desktop",
+    "screenshot": ".omo/evidence/ui-verification/ui-desktop-swap.png"
+  },
+  {
+    "viewport": "desktop",
+    "screenshot": ".omo/evidence/ui-verification/ui-desktop-reloaded.png"
+  },
+  {
+    "viewport": "desktop",
+    "screenshot": ".omo/evidence/ui-verification/ui-desktop-settings.png"
+  },
+  {
+    "viewport": "desktop",
+    "screenshot": ".omo/evidence/ui-verification/ui-desktop-models.png"
+  },
+  {
+    "viewport": "desktop",
+    "screenshot": ".omo/evidence/ui-verification/ui-desktop-ai-preview.png"
+  },
+  {
+    "viewport": "desktop",
+    "screenshot": ".omo/evidence/ui-verification/ui-desktop-ai-accepted.png"
+  },
+  {
+    "viewport": "desktop",
+    "screenshot": ".omo/evidence/ui-verification/ui-desktop-import-error.png"
+  },
+  {
+    "viewport": "desktop",
+    "screenshot": ".omo/evidence/ui-verification/ui-desktop-local-request.png"
+  },
+  {
+    "viewport": "desktop",
+    "screenshot": ".omo/evidence/ui-verification/ui-desktop-local-plan.png"
+  },
+  {
+    "viewport": "desktop",
+    "screenshot": ".omo/evidence/ui-verification/ui-desktop-offline-ai.png"
+  },
+  {
+    "viewport": "desktop",
+    "screenshot": ".omo/evidence/ui-verification/ui-desktop-offline-manual.png"
+  },
+  {
+    "viewport": "desktop",
+    "workflow": "filter -> detail/focus/Escape -> add -> rename/prescription -> swap -> reload -> equipment -> explicit discovery fixture -> generation preview -> accept -> reload key cleared -> invalid import -> export download -> valid import -> local generation -> offline AI disabled -> offline manual creation",
+    "pageErrors": [],
+    "overflow": false,
+    "liveProvider": false
+  },
+  {
+    "viewport": "mobile",
+    "screenshot": ".omo/evidence/ui-verification/ui-mobile-home.png"
+  },
+  {
+    "viewport": "mobile",
+    "screenshot": ".omo/evidence/ui-verification/ui-mobile-filtered.png"
+  },
+  {
+    "viewport": "mobile",
+    "coldReducedMotionCanvas": {
+      "sequence": 1,
+      "width": 310,
+      "height": 320,
+      "litPixels": 3370,
+      "highlightPixels": 124,
+      "fingerprint": 110767349
+    }
+  },
+  {
+    "viewport": "mobile",
+    "screenshot": ".omo/evidence/ui-verification/ui-mobile-detail.png"
+  },
+  {
+    "viewport": "mobile",
+    "screenshot": ".omo/evidence/ui-verification/ui-mobile-detail-instructions.png"
+  },
+  {
+    "viewport": "mobile",
+    "screenshot": ".omo/evidence/ui-verification/ui-mobile-plan.png"
+  },
+  {
+    "viewport": "mobile",
+    "screenshot": ".omo/evidence/ui-verification/ui-mobile-swap.png"
+  },
+  {
+    "viewport": "mobile",
+    "screenshot": ".omo/evidence/ui-verification/ui-mobile-reloaded.png"
+  },
+  {
+    "viewport": "mobile",
+    "screenshot": ".omo/evidence/ui-verification/ui-mobile-settings.png"
+  },
+  {
+    "viewport": "mobile",
+    "screenshot": ".omo/evidence/ui-verification/ui-mobile-models.png"
+  },
+  {
+    "viewport": "mobile",
+    "screenshot": ".omo/evidence/ui-verification/ui-mobile-ai-preview.png"
+  },
+  {
+    "viewport": "mobile",
+    "screenshot": ".omo/evidence/ui-verification/ui-mobile-ai-accepted.png"
+  },
+  {
+    "viewport": "mobile",
+    "screenshot": ".omo/evidence/ui-verification/ui-mobile-import-error.png"
+  },
+  {
+    "viewport": "mobile",
+    "screenshot": ".omo/evidence/ui-verification/ui-mobile-local-request.png"
+  },
+  {
+    "viewport": "mobile",
+    "screenshot": ".omo/evidence/ui-verification/ui-mobile-local-plan.png"
+  },
+  {
+    "viewport": "mobile",
+    "screenshot": ".omo/evidence/ui-verification/ui-mobile-offline-ai.png"
+  },
+  {
+    "viewport": "mobile",
+    "screenshot": ".omo/evidence/ui-verification/ui-mobile-offline-manual.png"
+  },
+  {
+    "viewport": "mobile",
+    "screenshot": ".omo/evidence/ui-verification/ui-mobile-360-settings.png"
+  },
+  {
+    "viewport": "mobile",
+    "workflow": "filter -> detail/focus/Escape -> add -> rename/prescription -> swap -> reload -> equipment -> explicit discovery fixture -> generation preview -> accept -> reload key cleared -> invalid import -> export download -> valid import -> local generation -> offline AI disabled -> offline manual creation",
+    "pageErrors": [],
+    "overflow": false,
+    "liveProvider": false
+  }
+]
+PASS browser-qa.mjs
+RUN resize-qa.mjs
+{
+  "phase": "after",
+  "measurements": [
+    {
+      "viewport": 375,
+      "pageWidth": 375,
+      "dialogClient": 335,
+      "dialogScroll": 335,
+      "gridWidth": 303,
+      "gridTrack": "303px",
+      "viewerWidth": 303,
+      "canvasWidth": 303
+    },
+    {
+      "viewport": 375,
+      "pageWidth": 375,
+      "chipRight": 375
+    },
+    {
+      "viewport": 360,
+      "pageWidth": 360,
+      "chipRight": 360
+    }
+  ],
+  "pageErrors": [],
+  "browserClosed": true,
+  "coldCanvas": {
+    "sequence": 1,
+    "width": 499,
+    "height": 440,
+    "litPixels": 10228,
+    "highlightPixels": 733,
+    "fingerprint": 1740266261
+  },
+  "desktopCanvas": {
+    "sequence": 3,
+    "width": 499,
+    "height": 440,
+    "litPixels": 10599,
+    "highlightPixels": 704,
+    "fingerprint": 1674155452
+  },
+  "resizedCanvas": {
+    "sequence": 4,
+    "width": 303,
+    "height": 320,
+    "litPixels": 5606,
+    "highlightPixels": 378,
+    "fingerprint": 3259816584
+  },
+  "sideCanvas": {
+    "sequence": 5,
+    "width": 303,
+    "height": 320,
+    "litPixels": 2188,
+    "highlightPixels": 140,
+    "fingerprint": 1348184942
+  }
+}
+PASS resize-qa.mjs
+RUN edge-qa.mjs
+{
+  "defects": [
+    {
+      "id": "UI-V1",
+      "action": "Import valid backup with one plan and activePlanId:null -> Plan shows Imported routine selected -> Add a movement -> first catalog Add -> View plan",
+      "expected": "Add to the displayed selected Imported routine",
+      "actual": "A second My training plan is created and activated; Imported routine stays empty",
+      "persisted": {
+        "schemaVersion": 1,
+        "gym": {
+          "availableEquipment": []
+        },
+        "plans": [
+          {
+            "id": "imported-plan",
+            "name": "Imported routine",
+            "days": [
+              {
+                "id": "imported-day",
+                "name": "Imported session",
+                "items": []
+              }
+            ],
+            "createdAt": "2026-09-12T00:00:00Z",
+            "updatedAt": "2026-09-12T00:00:00Z",
+            "source": "manual"
+          },
+          {
+            "id": "419654ce-5bf5-42fb-952c-4c7c39a97aa3",
+            "name": "My training plan",
+            "days": [
+              {
+                "id": "cb294f2c-0fec-4018-bf1b-3f27d5091f52",
+                "name": "Day 1",
+                "items": [
+                  {
+                    "id": "cf83f538-8f04-44a0-8793-b2460e1bc4b9",
+                    "exerciseId": "barbell-bench-press",
+                    "sets": 3,
+                    "prescription": {
+                      "kind": "reps",
+                      "min": 8,
+                      "max": 12
+                    },
+                    "restSeconds": 90
+                  }
+                ]
+              }
+            ],
+            "createdAt": "2026-09-12T06:07:13.963Z",
+            "updatedAt": "2026-09-12T06:07:13.963Z",
+            "source": "manual"
+          }
+        ],
+        "activePlanId": "419654ce-5bf5-42fb-952c-4c7c39a97aa3",
+        "aiPreferences": null
+      }
+    },
+    {
+      "id": "UI-V2",
+      "action": "Set OpenAI-compatible root URL http://provider.example/v1 and manual model example-model -> Save AI preferences -> Discover models",
+      "expected": "Reject unsupported provider root before reporting saved preferences",
+      "actual": "Preferences save successfully, but the real adapter immediately rejects discovery without HTTP",
+      "savedPreferences": {
+        "config": {
+          "provider": "openai-compatible",
+          "baseUrl": "http://provider.example/v1"
+        },
+        "modelId": "example-model"
+      },
+      "error": "provider: Use HTTPS (or localhost HTTP), without URL credentials, query parameters, or fragments.",
+      "requests": []
+    }
+  ],
+  "pageErrors": [],
+  "browserClosed": true
+}
+PASS edge-qa.mjs
+Owned preview process terminated.
