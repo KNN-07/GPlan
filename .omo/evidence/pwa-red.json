@@ -1,0 +1,51 @@
+{
+  "phase": "RED",
+  "given": "Unmodified production scaffold in a fresh context",
+  "when": "Read installability and manifest",
+  "then": "Required 192/512 install icons are missing",
+  "manifest": {
+    "url": "http://127.0.0.1:4175/manifest.webmanifest",
+    "errors": [],
+    "data": "{\"name\":\"gplan\",\"short_name\":\"gplan\",\"start_url\":\"/\",\"display\":\"standalone\",\"background_color\":\"#ffffff\",\"theme_color\":\"#42b883\",\"lang\":\"en\",\"scope\":\"/\"}\n",
+    "parsed": {
+      "scope": "http://127.0.0.1:4175/"
+    },
+    "manifest": {
+      "backgroundColor": "rgba(255,255,255,1)",
+      "display": "kStandalone",
+      "id": "http://127.0.0.1:4175/",
+      "name": "gplan",
+      "orientation": "DEFAULT",
+      "preferRelatedApplications": false,
+      "scope": "http://127.0.0.1:4175/",
+      "startUrl": "http://127.0.0.1:4175/",
+      "themeColor": "rgba(66,184,131,1)"
+    }
+  },
+  "errors": {
+    "installabilityErrors": [
+      {
+        "errorId": "in-incognito",
+        "errorArguments": []
+      },
+      {
+        "errorId": "manifest-missing-suitable-icon",
+        "errorArguments": [
+          {
+            "name": "minimum-icon-size-in-pixels",
+            "value": "144"
+          }
+        ]
+      },
+      {
+        "errorId": "no-acceptable-icon",
+        "errorArguments": [
+          {
+            "name": "minimum-icon-size-in-pixels",
+            "value": "144"
+          }
+        ]
+      }
+    ]
+  }
+}

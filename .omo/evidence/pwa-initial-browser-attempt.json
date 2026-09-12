@@ -1,0 +1,120 @@
+{
+  "phase": "INITIAL_ATTEMPT_NOT_FINAL_GREEN",
+  "harnessFailure": "navigator.onLine was true after offline reload in this Chromium build. Final proof stops the server and verifies cached responses plus failure of an uncached request instead.",
+  "profile": "/tmp/gplan-pwa-shell-K5TgpL",
+  "server": "127.0.0.1:4175",
+  "checks": [
+    "Real Chromium reports zero installability errors; all manifest icons decode at advertised sizes."
+  ],
+  "manifest": {
+    "name": "GPlan",
+    "short_name": "GPlan",
+    "description": "Your personal workout planner. Plan and train, even offline.",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#f4f3e9",
+    "theme_color": "#f4f3e9",
+    "lang": "en",
+    "scope": "/",
+    "id": "/",
+    "icons": [
+      {
+        "src": "/icons/gplan-192.png",
+        "sizes": "192x192",
+        "type": "image/png",
+        "purpose": "any"
+      },
+      {
+        "src": "/icons/gplan-512.png",
+        "sizes": "512x512",
+        "type": "image/png",
+        "purpose": "any"
+      },
+      {
+        "src": "/icons/gplan-maskable-512.png",
+        "sizes": "512x512",
+        "type": "image/png",
+        "purpose": "maskable"
+      }
+    ]
+  },
+  "installability": {
+    "installabilityErrors": []
+  },
+  "responses": [
+    {
+      "path": "manifest.webmanifest",
+      "status": 200,
+      "type": "application/manifest+json",
+      "bytes": 516
+    },
+    {
+      "path": "icons/gplan.svg",
+      "status": 200,
+      "type": "image/svg+xml",
+      "bytes": 358
+    },
+    {
+      "path": "icons/apple-touch-icon.png",
+      "status": 200,
+      "type": "image/png",
+      "bytes": 5958
+    },
+    {
+      "path": "icons/gplan-192.png",
+      "status": 200,
+      "type": "image/png",
+      "bytes": 6381
+    },
+    {
+      "path": "icons/gplan-512.png",
+      "status": 200,
+      "type": "image/png",
+      "bytes": 5126
+    },
+    {
+      "path": "icons/gplan-maskable-512.png",
+      "status": 200,
+      "type": "image/png",
+      "bytes": 5126
+    },
+    {
+      "path": "assets/index-BHF83pb5.js",
+      "status": 200,
+      "type": "text/javascript",
+      "bytes": 223088
+    },
+    {
+      "path": "assets/workbox-window.prod.es5-Bd17z0YL.js",
+      "status": 200,
+      "type": "text/javascript",
+      "bytes": 5653
+    }
+  ],
+  "decodedIcons": [
+    {
+      "src": "/icons/gplan-192.png",
+      "width": 192,
+      "height": 192
+    },
+    {
+      "src": "/icons/gplan-512.png",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "src": "/icons/gplan-maskable-512.png",
+      "width": 512,
+      "height": 512
+    }
+  ],
+  "controller": "http://127.0.0.1:4175/sw.js",
+  "cleanup": {
+    "context": "closed",
+    "chromium": "closed with context",
+    "server": "own preview :4175 closed",
+    "temporaryProfile": "removed /tmp/gplan-pwa-shell-K5TgpL",
+    "harness": "inline; no files created",
+    "userProfiles": "untouched"
+  }
+}
