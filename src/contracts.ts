@@ -1,4 +1,4 @@
-export type Muscle = 'chest'|'back'|'shoulders'|'quads'|'hamstrings'|'glutes'|'biceps'|'triceps'|'calves'|'core';
+export type Muscle = 'chest'|'back'|'shoulders'|'quads'|'hamstrings'|'glutes'|'adductors'|'biceps'|'triceps'|'calves'|'core';
 export type Equipment = 'dumbbells'|'barbell'|'bench'|'rack'|'cable'|'smith-machine'|'leg-press'|'leg-extension'|'leg-curl'|'chest-press'|'shoulder-press'|'lat-pulldown'|'seated-row'|'pec-deck'|'assisted-pullup'|'calf-machine'|'hip-abductor'|'hip-adductor'|'pullup-bar'|'dip-bars'|'bands'|'kettlebell'|'stability-ball'|'ab-wheel';
 export type Movement = 'squat'|'hinge'|'lunge'|'horizontal-push'|'vertical-push'|'horizontal-pull'|'vertical-pull'|'elbow-flexion'|'elbow-extension'|'shoulder-isolation'|'knee-extension'|'knee-flexion'|'hip-isolation'|'plantar-flexion'|'trunk-flexion'|'trunk-stability';
 export type MotionFamily = 'squat'|'hinge'|'lunge'|'horizontal-press'|'vertical-press'|'horizontal-pull'|'vertical-pull'|'curl'|'extension'|'raise'|'calf-raise'|'crunch'|'leg-curl'|'static';
