@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite --host 0.0.0.0",
     "typecheck": "tsc -b",
-    "test": "vitest run --maxWorkers=4 --exclude=e2e/**",
+    "test": "vitest run",
     "build": "bun run typecheck && vite build",
     "preview": "vite preview --host 0.0.0.0",
     "test:e2e": "playwright test"
