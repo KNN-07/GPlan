@@ -1,0 +1,25 @@
+$ vitest run --maxWorkers=4 --exclude=e2e/** src/graphics
+
+ RUN  v5.0.0 /home/norman/Repos/GPlan
+
+ ❯ src/graphics/motions.test.ts (0 test)
+
+⎯⎯⎯⎯⎯⎯ Failed Suites 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/graphics/motions.test.ts [ src/graphics/motions.test.ts ]
+ReferenceError: expect is not defined
+ ❯ node_modules/@testing-library/jest-dom/dist/index.mjs:10:1
+ ❯ tests/setup.ts:1:1
+      1| import '@testing-library/jest-dom';
+       | ^
+      2|
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  no tests
+   Start at  11:46:07
+   Duration  1.15s (environment 99%, worker 1%)
+
+error: script "test" exited with code 1

@@ -1,0 +1,29 @@
+$ vitest run --maxWorkers=4 --exclude=e2e/** src/graphics --globals
+
+ RUN  v5.0.0 /home/norman/Repos/GPlan
+
+ ❯ src/graphics/motions.test.ts (48 tests | 1 failed) 477ms
+   ❯ procedural motion contract (45)
+     × extends the knee rather than the elbow for knee-extension metadata 5ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/graphics/motions.test.ts > procedural motion contract > extends the knee rather than the elbow for knee-extension metadata
+AssertionError: expected 1.5 to be less than 0.2
+ ❯ src/graphics/motions.test.ts:68:31
+     66|     const pose = sampleMotion(input, .5, 'knee-extension');
+     67|     // Then the knee straightens while the arms remain at rest.
+     68|     expect(pose.leftLeg.knee).toBeLessThan(.2);
+       |                               ^
+     69|     expect(pose.leftArm.elbow).toBeLessThan(.3);
+     70|     expect(pose.leftArm.shoulder[0]).toBe(0);
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  1 failed | 47 passed (48)
+   Start at  11:57:23
+   Duration  1.38s (environment 47%, tests 38%, setup 8%, transform 5%, import 1%, worker 1%)
+
+error: script "test" exited with code 1

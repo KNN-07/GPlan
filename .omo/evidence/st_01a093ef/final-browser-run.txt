@@ -1,0 +1,36 @@
+12:23:13 PM [vite] (client) Re-optimizing dependencies because vite config has changed
+(!) Failed to run dependency scan. Skipping dependency pre-bundling. Error: The following dependencies are imported but could not be resolved:
+
+  virtual:pwa-register (imported by /home/norman/Repos/GPlan/src/pwa/register.ts)
+
+Are they installed?
+    at file:///home/norman/Repos/GPlan/node_modules/vite/dist/node/chunks/node.js:27899:33
+    at async file:///home/norman/Repos/GPlan/node_modules/vite/dist/node/chunks/node.js:35201:15
+12:23:14 PM [vite] (client) dependencies optimized: @react-three/fiber, react-dom/client, react, react/jsx-dev-runtime, three, three/examples/jsm/controls/OrbitControls.js
+12:23:15 PM [vite] (client) [console.warn] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+12:23:55 PM [vite] (client) [console.warn] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+12:23:57 PM [vite] (client) [console.warn] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+BROWSER_EXIT=0
+12:24:00 PM [vite] (client) [console.warn] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+12:24:02 PM [vite] (client) [console.warn] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+12:24:04 PM [vite] (client) [console.warn] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+VARIANTS_EXIT=0
+vite v8.3.0 building client environment for production...
+transforming...
+✓ 46 modules transformed.
+rendering chunks...
+12:24:06 PM [vite] (client) page reload .omo/evidence/st_01a093ef/build/.omo/evidence/st_01a093ef/harness.html
+computing gzip size...
+12:24:06 PM [vite] (client) page reload .omo/evidence/st_01a093ef/build/.omo/evidence/st_01a093ef/harness.html
+.omo/evidence/st_01a093ef/build/.omo/evidence/st_01a093ef/harness.html      0.38 kB │ gzip:   0.27 kB
+.omo/evidence/st_01a093ef/build/assets/harness-Cs_plEQo.css                 3.36 kB │ gzip:   1.17 kB
+.omo/evidence/st_01a093ef/build/assets/harness-D5DqpknZ.js              1,523.79 kB │ gzip: 419.73 kB
+
+[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 623ms
+BUILD_EXIT=0
+SERVER_CLOSED port=5197 receipt=await_server.close

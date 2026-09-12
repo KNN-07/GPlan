@@ -1,0 +1,13 @@
+LSP_MESSAGE {"jsonrpc":"2.0","id":1,"error":{"code":-32603,"message":"Request initialize failed with message: The TypeScript of the workspace (TypeScript 7.0.2 at \"/home/norman/Repos/GPlan/node_modules/typescript/lib\") provides no tsserver.js. No other valid TypeScript installation was found. Exiting."}}
+LSP_MESSAGE {"jsonrpc":"2.0","method":"$/typescriptVersion","params":{"version":"1.0.0","source":"bundled"}}
+LSP_MESSAGE {"jsonrpc":"2.0","method":"window/logMessage","params":{"type":2,"message":"Invalid languageId \"typescriptreact\" provided for uri \"file:///home/norman/Repos/GPlan/src/graphics/Equipment.tsx\". Correcting to \"typescriptreact\""}}
+LSP_MESSAGE {"jsonrpc":"2.0","method":"window/logMessage","params":{"type":2,"message":"Invalid languageId \"typescriptreact\" provided for uri \"file:///home/norman/Repos/GPlan/src/graphics/ExerciseViewer.tsx\". Correcting to \"typescriptreact\""}}
+LSP_MESSAGE {"jsonrpc":"2.0","method":"window/logMessage","params":{"type":2,"message":"Invalid languageId \"typescriptreact\" provided for uri \"file:///home/norman/Repos/GPlan/src/graphics/Figure.tsx\". Correcting to \"typescriptreact\""}}
+LSP_MESSAGE {"jsonrpc":"2.0","method":"window/logMessage","params":{"type":2,"message":"Invalid languageId \"typescriptreact\" provided for uri \"file:///home/norman/Repos/GPlan/src/graphics/Primitives.tsx\". Correcting to \"typescriptreact\""}}
+LSP_MESSAGE {"jsonrpc":"2.0","method":"window/logMessage","params":{"type":2,"message":"Invalid languageId \"typescriptreact\" provided for uri \"file:///home/norman/Repos/GPlan/src/graphics/Scene.tsx\". Correcting to \"typescriptreact\""}}
+LSP_MESSAGE {"jsonrpc":"2.0","method":"window/logMessage","params":{"type":2,"message":"Invalid languageId \"typescript\" provided for uri \"file:///home/norman/Repos/GPlan/src/graphics/motions.test.ts\". Correcting to \"typescript\""}}
+LSP_MESSAGE {"jsonrpc":"2.0","method":"window/logMessage","params":{"type":2,"message":"Invalid languageId \"typescript\" provided for uri \"file:///home/norman/Repos/GPlan/src/graphics/motions.ts\". Correcting to \"typescript\""}}
+LSP_MESSAGE {"jsonrpc":"2.0","method":"window/logMessage","params":{"type":2,"message":"Invalid languageId \"typescript\" provided for uri \"file:///home/norman/Repos/GPlan/src/graphics/palette.ts\". Correcting to \"typescript\""}}
+LSP_MESSAGE {"jsonrpc":"2.0","method":"window/logMessage","params":{"type":2,"message":"Invalid languageId \"typescript\" provided for uri \"file:///home/norman/Repos/GPlan/src/graphics/viewer.css.d.ts\". Correcting to \"typescript\""}}
+LSP_TIMEOUT []
+LSP_FILES=0 LSP_ERRORS=0

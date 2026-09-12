@@ -1,0 +1,139 @@
+{
+  "browserChecks": 24,
+  "errors": [],
+  "results": [
+    {
+      "behavior": "one canvas, capped DPR",
+      "dpr": 1.5
+    },
+    {
+      "behavior": "pause freezes pixels and render count",
+      "frameBefore": 38
+    },
+    {
+      "behavior": "orbit and keyboard reset restore exact pixels"
+    },
+    {
+      "behavior": "play changes articulated pixels"
+    },
+    {
+      "behavior": "family rendered",
+      "family": "squat",
+      "posture": "standing",
+      "prop": "barbell"
+    },
+    {
+      "behavior": "family rendered",
+      "family": "hinge",
+      "posture": "standing",
+      "prop": "dumbbells"
+    },
+    {
+      "behavior": "family rendered",
+      "family": "lunge",
+      "posture": "standing",
+      "prop": "none"
+    },
+    {
+      "behavior": "family rendered",
+      "family": "horizontal-press",
+      "posture": "supine",
+      "prop": "barbell"
+    },
+    {
+      "behavior": "family rendered",
+      "family": "vertical-press",
+      "posture": "seated",
+      "prop": "dumbbells"
+    },
+    {
+      "behavior": "family rendered",
+      "family": "horizontal-pull",
+      "posture": "seated",
+      "prop": "cable"
+    },
+    {
+      "behavior": "family rendered",
+      "family": "vertical-pull",
+      "posture": "seated",
+      "prop": "machine"
+    },
+    {
+      "behavior": "family rendered",
+      "family": "curl",
+      "posture": "standing",
+      "prop": "dumbbells"
+    },
+    {
+      "behavior": "family rendered",
+      "family": "extension",
+      "posture": "seated",
+      "prop": "machine"
+    },
+    {
+      "behavior": "family rendered",
+      "family": "raise",
+      "posture": "standing",
+      "prop": "dumbbells"
+    },
+    {
+      "behavior": "family rendered",
+      "family": "calf-raise",
+      "posture": "standing",
+      "prop": "machine"
+    },
+    {
+      "behavior": "family rendered",
+      "family": "crunch",
+      "posture": "supine",
+      "prop": "none"
+    },
+    {
+      "behavior": "family rendered",
+      "family": "leg-curl",
+      "posture": "prone",
+      "prop": "machine"
+    },
+    {
+      "behavior": "family rendered",
+      "family": "static",
+      "posture": "quadruped",
+      "prop": "none"
+    },
+    {
+      "behavior": "responsive without overflow",
+      "width": 375
+    },
+    {
+      "behavior": "responsive without overflow",
+      "width": 768
+    },
+    {
+      "behavior": "visibility event stops rendering",
+      "hiddenFrames": 756
+    },
+    {
+      "behavior": "unmount removes canvas and stops rendering"
+    },
+    {
+      "behavior": "reduced motion defaults paused, explicit play works"
+    },
+    {
+      "behavior": "real context loss gives accessible fallback"
+    }
+  ]
+}
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+locator.waitFor: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for getByRole('status') to be visible[22m
+
+    at /home/norman/Repos/GPlan/.omo/evidence/st_01a093ef/browser.mjs:139:56 {
+  log: [ "  - waiting for getByRole('status') to be visible" ],
+  name: 'TimeoutError'
+}
+
+Node.js v24.20.0

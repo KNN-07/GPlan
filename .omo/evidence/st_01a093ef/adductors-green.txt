@@ -1,0 +1,4 @@
+12:30:03 PM [vite] (client) [console.warn] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+PRIMARY_ADDUCTOR_PATCHES=2
+ADDUCTOR_CHECK=PASS PAGE_ERRORS=0 CAPTURES=2
+ADDUCTOR_SERVER_CLOSED port=5197

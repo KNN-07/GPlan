@@ -1,0 +1,20 @@
+SERVER_CLOSED port=5197 receipt=await_server.close (final-browser-run.txt)
+Initial SIGTERM stopped the original server but Vite exited before the custom log marker; ss showed no listener. Final verification used direct awaited close instead.
+REMOVED .omo/evidence/st_01a093ef/harness.html
+REMOVED .omo/evidence/st_01a093ef/harness.tsx
+REMOVED .omo/evidence/st_01a093ef/server.mjs
+REMOVED .omo/evidence/st_01a093ef/server.pid
+REMOVED .omo/evidence/st_01a093ef/build
+REMOVED .omo/evidence/st_01a093ef/initial-canvas.png
+REMOVED .omo/evidence/st_01a093ef/initial-page.png
+REMOVED .omo/evidence/st_01a093ef/hover-fixed.png
+REMOVED .omo/evidence/st_01a093ef/unsupported-debug.png
+All browser drivers completed their finally-block browser.close(). Verification drivers and logs retained as evidence only.
+
+REMOVED .omo/evidence/st_01a093ef/adductors.html
+REMOVED .omo/evidence/st_01a093ef/adductors.tsx
+ADDUCTOR_SERVER_CLOSED port=5197 (adductors-green.txt); browser.close and server.close awaited.
+REMOVED .omo/evidence/st_01a093ef/pose-correction.html
+REMOVED .omo/evidence/st_01a093ef/pose-correction.tsx
+REMOVED .omo/evidence/st_01a093ef/pose-correction-build
+POSE_CORRECTION_SERVER_CLOSED port=5197 (pose-correction-green.txt); browser.close and server.close awaited.

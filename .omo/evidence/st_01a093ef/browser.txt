@@ -1,0 +1,138 @@
+{
+  "browserChecks": 28,
+  "errors": [],
+  "results": [
+    {
+      "behavior": "one canvas, capped DPR",
+      "dpr": 1.5
+    },
+    {
+      "behavior": "pause freezes pixels and render count",
+      "frameBefore": 38
+    },
+    {
+      "behavior": "wheel zoom changes the actual canvas"
+    },
+    {
+      "behavior": "orbit and keyboard reset restore exact pixels"
+    },
+    {
+      "behavior": "play changes articulated pixels"
+    },
+    {
+      "behavior": "family rendered",
+      "family": "squat",
+      "posture": "standing",
+      "prop": "barbell"
+    },
+    {
+      "behavior": "family rendered",
+      "family": "hinge",
+      "posture": "standing",
+      "prop": "dumbbells"
+    },
+    {
+      "behavior": "family rendered",
+      "family": "lunge",
+      "posture": "standing",
+      "prop": "none"
+    },
+    {
+      "behavior": "family rendered",
+      "family": "horizontal-press",
+      "posture": "supine",
+      "prop": "barbell"
+    },
+    {
+      "behavior": "family rendered",
+      "family": "vertical-press",
+      "posture": "seated",
+      "prop": "dumbbells"
+    },
+    {
+      "behavior": "family rendered",
+      "family": "horizontal-pull",
+      "posture": "seated",
+      "prop": "cable"
+    },
+    {
+      "behavior": "family rendered",
+      "family": "vertical-pull",
+      "posture": "seated",
+      "prop": "machine"
+    },
+    {
+      "behavior": "family rendered",
+      "family": "curl",
+      "posture": "standing",
+      "prop": "dumbbells"
+    },
+    {
+      "behavior": "family rendered",
+      "family": "extension",
+      "posture": "seated",
+      "prop": "machine"
+    },
+    {
+      "behavior": "family rendered",
+      "family": "raise",
+      "posture": "standing",
+      "prop": "dumbbells"
+    },
+    {
+      "behavior": "family rendered",
+      "family": "calf-raise",
+      "posture": "standing",
+      "prop": "machine"
+    },
+    {
+      "behavior": "family rendered",
+      "family": "crunch",
+      "posture": "supine",
+      "prop": "none"
+    },
+    {
+      "behavior": "family rendered",
+      "family": "leg-curl",
+      "posture": "prone",
+      "prop": "machine"
+    },
+    {
+      "behavior": "family rendered",
+      "family": "static",
+      "posture": "quadruped",
+      "prop": "none"
+    },
+    {
+      "behavior": "responsive without overflow",
+      "width": 375
+    },
+    {
+      "behavior": "responsive without overflow",
+      "width": 768
+    },
+    {
+      "behavior": "camera and playback work with network offline"
+    },
+    {
+      "behavior": "real IntersectionObserver stops offscreen rendering"
+    },
+    {
+      "behavior": "visibility event stops rendering",
+      "hiddenFrames": 826
+    },
+    {
+      "behavior": "unmount removes canvas and stops rendering"
+    },
+    {
+      "behavior": "uncontrolled optional props and className work"
+    },
+    {
+      "behavior": "reduced motion defaults paused, explicit play works"
+    },
+    {
+      "behavior": "real context loss gives accessible fallback"
+    }
+  ]
+}
+{"behavior":"WebGL disabled fallback","expectedErrors":[]}

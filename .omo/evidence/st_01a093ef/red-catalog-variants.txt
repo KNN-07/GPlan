@@ -1,0 +1,74 @@
+$ vitest run --maxWorkers=4 --exclude=e2e/** src/graphics
+
+ RUN  v5.0.0 /home/norman/Repos/GPlan
+
+ ❯ src/graphics/motions.test.ts (52 tests | 4 failed) 393ms
+   ❯ procedural motion contract (49)
+     × keeps the leg-press hips seated throughout a squat-family repetition 4ms
+     × differentiates the supporting leg for unilateral squat 4ms
+     × differentiates the supporting leg for unilateral hinge 1ms
+     × uses hip abduction instead of arm raises for hip-isolation metadata 1ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 4 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/graphics/motions.test.ts > procedural motion contract > keeps the leg-press hips seated throughout a squat-family repetition
+AssertionError: expected 0 to be less than -1
+ ❯ src/graphics/motions.test.ts:80:32
+     78|     // Then the thighs remain seated and the pelvis stays on the seat.
+     79|     for (const pose of poses) {
+     80|       expect(pose.leftLeg.hip).toBeLessThan(-1);
+       |                                ^
+     81|       expect(pose.position[1]).toBeCloseTo(.65);
+     82|     }
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/4]⎯
+
+ FAIL  src/graphics/motions.test.ts > procedural motion contract > differentiates the supporting leg for unilateral squat
+AssertionError: expected { hip: -1, knee: 1.85, ankle: -0.35 } to not deeply equal { hip: -1, knee: 1.85, ankle: -0.35 }
+
+Compared values have no visual difference.
+
+ ❯ src/graphics/motions.test.ts:91:30
+     89|     const pose = sampleMotion(input, .5);
+     90|     // Then the legs have distinct supporting/working roles.
+     91|     expect(pose.leftLeg).not.toEqual(pose.rightLeg);
+       |                              ^
+     92|   });
+     93|
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/4]⎯
+
+ FAIL  src/graphics/motions.test.ts > procedural motion contract > differentiates the supporting leg for unilateral hinge
+AssertionError: expected { hip: -0.25, knee: 0.4, ankle: +0 } to not deeply equal { hip: -0.25, knee: 0.4, ankle: +0 }
+
+Compared values have no visual difference.
+
+ ❯ src/graphics/motions.test.ts:91:30
+     89|     const pose = sampleMotion(input, .5);
+     90|     // Then the legs have distinct supporting/working roles.
+     91|     expect(pose.leftLeg).not.toEqual(pose.rightLeg);
+       |                              ^
+     92|   });
+     93|
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[3/4]⎯
+
+ FAIL  src/graphics/motions.test.ts > procedural motion contract > uses hip abduction instead of arm raises for hip-isolation metadata
+TypeError: actual value must be number or bigint, received "undefined"
+ ❯ src/graphics/motions.test.ts:100:36
+     98|     const pose = sampleMotion(input, .5, 'hip-isolation');
+     99|     // Then the working leg abducts while the shoulders stay at rest.
+    100|     expect(pose.leftLeg.abduction).toBeGreaterThan(.5);
+       |                                    ^
+    101|     expect(pose.leftArm.shoulder).toEqual([0, 0, 0]);
+    102|   });
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[4/4]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  4 failed | 48 passed (52)
+   Start at  12:17:34
+   Duration  1.58s (environment 56%, tests 28%, setup 11%, transform 4%, import 1%)
+
+error: script "test" exited with code 1

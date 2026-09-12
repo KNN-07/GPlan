@@ -1,0 +1,3 @@
+{"name":"Single-leg leg press","metadata":{"family":"squat","posture":"seated","prop":"machine","unilateral":true},"errors":[]}
+{"name":"Single-leg Romanian deadlift","metadata":{"family":"hinge","posture":"standing","prop":"dumbbells","unilateral":true},"errors":[]}
+{"name":"Cable hip abduction","metadata":{"family":"raise","posture":"standing","prop":"cable","unilateral":true},"errors":[]}

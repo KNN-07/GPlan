@@ -1,0 +1,222 @@
+$ vitest run --maxWorkers=4 --exclude=e2e/** src/graphics --globals
+
+ RUN  v5.0.0 /home/norman/Repos/GPlan
+
+ ❯ src/graphics/motions.test.ts (47 tests | 47 failed) 27ms
+   ❯ procedural motion contract (44)
+     × returns deterministic finite bounded transforms for squat across metadata 6ms
+     × returns deterministic finite bounded transforms for hinge across metadata 1ms
+     × returns deterministic finite bounded transforms for lunge across metadata 1ms
+     × returns deterministic finite bounded transforms for horizontal-press across metadata 1ms
+     × returns deterministic finite bounded transforms for vertical-press across metadata 0ms
+     × returns deterministic finite bounded transforms for horizontal-pull across metadata 0ms
+     × returns deterministic finite bounded transforms for vertical-pull across metadata 0ms
+     × returns deterministic finite bounded transforms for curl across metadata 1ms
+     × returns deterministic finite bounded transforms for extension across metadata 1ms
+     × returns deterministic finite bounded transforms for raise across metadata 1ms
+     × returns deterministic finite bounded transforms for calf-raise across metadata 0ms
+     × returns deterministic finite bounded transforms for crunch across metadata 0ms
+     × returns deterministic finite bounded transforms for leg-curl across metadata 0ms
+     × returns deterministic finite bounded transforms for static across metadata 0ms
+     × closes squat loops continuously including the seam 0ms
+     × closes hinge loops continuously including the seam 1ms
+     × closes lunge loops continuously including the seam 0ms
+     × closes horizontal-press loops continuously including the seam 1ms
+     × closes vertical-press loops continuously including the seam 0ms
+     × closes horizontal-pull loops continuously including the seam 0ms
+     × closes vertical-pull loops continuously including the seam 0ms
+     × closes curl loops continuously including the seam 0ms
+     × closes extension loops continuously including the seam 0ms
+     × closes raise loops continuously including the seam 0ms
+     × closes calf-raise loops continuously including the seam 0ms
+     × closes crunch loops continuously including the seam 0ms
+     × closes leg-curl loops continuously including the seam 0ms
+     × closes static loops continuously including the seam 0ms
+     × articulates squat rather than only moving a rigid figure 0ms
+     × articulates hinge rather than only moving a rigid figure 0ms
+     × articulates lunge rather than only moving a rigid figure 0ms
+     × articulates horizontal-press rather than only moving a rigid figure 0ms
+     × articulates vertical-press rather than only moving a rigid figure 0ms
+     × articulates horizontal-pull rather than only moving a rigid figure 0ms
+     × articulates vertical-pull rather than only moving a rigid figure 0ms
+     × articulates curl rather than only moving a rigid figure 0ms
+     × articulates extension rather than only moving a rigid figure 0ms
+     × articulates raise rather than only moving a rigid figure 0ms
+     × articulates calf-raise rather than only moving a rigid figure 0ms
+     × articulates crunch rather than only moving a rigid figure 0ms
+     × articulates leg-curl rather than only moving a rigid figure 0ms
+     × holds the right arm when a curl is unilateral 0ms
+     × holds static postures across the entire loop 0ms
+     × gives each posture a distinct base transform 0ms
+   ❯ playback clock (3)
+     × preserves phase when inactive 0ms
+     × advances and wraps on the four-second repetition clock 0ms
+     × caps a resumed frame delta to avoid jumping after suspension 0ms
+
+⎯⎯⎯⎯⎯⎯ Failed Tests 47 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/graphics/motions.test.ts > procedural motion contract > returns deterministic finite bounded transforms for squat across metadata
+ FAIL  src/graphics/motions.test.ts > procedural motion contract > returns deterministic finite bounded transforms for hinge across metadata
+ FAIL  src/graphics/motions.test.ts > procedural motion contract > returns deterministic finite bounded transforms for lunge across metadata
+ FAIL  src/graphics/motions.test.ts > procedural motion contract > returns deterministic finite bounded transforms for horizontal-press across metadata
+ FAIL  src/graphics/motions.test.ts > procedural motion contract > returns deterministic finite bounded transforms for vertical-press across metadata
+ FAIL  src/graphics/motions.test.ts > procedural motion contract > returns deterministic finite bounded transforms for horizontal-pull across metadata
+ FAIL  src/graphics/motions.test.ts > procedural motion contract > returns deterministic finite bounded transforms for vertical-pull across metadata
+ FAIL  src/graphics/motions.test.ts > procedural motion contract > returns deterministic finite bounded transforms for curl across metadata
+ FAIL  src/graphics/motions.test.ts > procedural motion contract > returns deterministic finite bounded transforms for extension across metadata
+ FAIL  src/graphics/motions.test.ts > procedural motion contract > returns deterministic finite bounded transforms for raise across metadata
+ FAIL  src/graphics/motions.test.ts > procedural motion contract > returns deterministic finite bounded transforms for calf-raise across metadata
+ FAIL  src/graphics/motions.test.ts > procedural motion contract > returns deterministic finite bounded transforms for crunch across metadata
+ FAIL  src/graphics/motions.test.ts > procedural motion contract > returns deterministic finite bounded transforms for leg-curl across metadata
+ FAIL  src/graphics/motions.test.ts > procedural motion contract > returns deterministic finite bounded transforms for static across metadata
+Error: Motion sampling not implemented
+ ❯ sampleMotion src/graphics/motions.ts:14:9
+     12|
+     13| export function sampleMotion(_spec: AnimationSpec, _phase: number): Mo…
+     14|   throw new Error('Motion sampling not implemented');
+       |         ^
+     15| }
+     16|
+ ❯ src/graphics/motions.test.ts:19:129
+ ❯ src/graphics/motions.test.ts:19:93
+ ❯ src/graphics/motions.test.ts:19:28
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/47]⎯
+
+ FAIL  src/graphics/motions.test.ts > procedural motion contract > closes squat loops continuously including the seam
+ FAIL  src/graphics/motions.test.ts > procedural motion contract > closes hinge loops continuously including the seam
+ FAIL  src/graphics/motions.test.ts > procedural motion contract > closes lunge loops continuously including the seam
+ FAIL  src/graphics/motions.test.ts > procedural motion contract > closes horizontal-press loops continuously including the seam
+ FAIL  src/graphics/motions.test.ts > procedural motion contract > closes vertical-press loops continuously including the seam
+ FAIL  src/graphics/motions.test.ts > procedural motion contract > closes horizontal-pull loops continuously including the seam
+ FAIL  src/graphics/motions.test.ts > procedural motion contract > closes vertical-pull loops continuously including the seam
+ FAIL  src/graphics/motions.test.ts > procedural motion contract > closes curl loops continuously including the seam
+ FAIL  src/graphics/motions.test.ts > procedural motion contract > closes extension loops continuously including the seam
+ FAIL  src/graphics/motions.test.ts > procedural motion contract > closes raise loops continuously including the seam
+ FAIL  src/graphics/motions.test.ts > procedural motion contract > closes calf-raise loops continuously including the seam
+ FAIL  src/graphics/motions.test.ts > procedural motion contract > closes crunch loops continuously including the seam
+ FAIL  src/graphics/motions.test.ts > procedural motion contract > closes leg-curl loops continuously including the seam
+ FAIL  src/graphics/motions.test.ts > procedural motion contract > closes static loops continuously including the seam
+Error: Motion sampling not implemented
+ ❯ sampleMotion src/graphics/motions.ts:14:9
+     12|
+     13| export function sampleMotion(_spec: AnimationSpec, _phase: number): Mo…
+     14|   throw new Error('Motion sampling not implemented');
+       |         ^
+     15| }
+     16|
+ ❯ src/graphics/motions.test.ts:33:30
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/47]⎯
+
+ FAIL  src/graphics/motions.test.ts > procedural motion contract > articulates squat rather than only moving a rigid figure
+ FAIL  src/graphics/motions.test.ts > procedural motion contract > articulates hinge rather than only moving a rigid figure
+ FAIL  src/graphics/motions.test.ts > procedural motion contract > articulates lunge rather than only moving a rigid figure
+ FAIL  src/graphics/motions.test.ts > procedural motion contract > articulates horizontal-press rather than only moving a rigid figure
+ FAIL  src/graphics/motions.test.ts > procedural motion contract > articulates vertical-press rather than only moving a rigid figure
+ FAIL  src/graphics/motions.test.ts > procedural motion contract > articulates horizontal-pull rather than only moving a rigid figure
+ FAIL  src/graphics/motions.test.ts > procedural motion contract > articulates vertical-pull rather than only moving a rigid figure
+ FAIL  src/graphics/motions.test.ts > procedural motion contract > articulates curl rather than only moving a rigid figure
+ FAIL  src/graphics/motions.test.ts > procedural motion contract > articulates extension rather than only moving a rigid figure
+ FAIL  src/graphics/motions.test.ts > procedural motion contract > articulates raise rather than only moving a rigid figure
+ FAIL  src/graphics/motions.test.ts > procedural motion contract > articulates calf-raise rather than only moving a rigid figure
+ FAIL  src/graphics/motions.test.ts > procedural motion contract > articulates crunch rather than only moving a rigid figure
+ FAIL  src/graphics/motions.test.ts > procedural motion contract > articulates leg-curl rather than only moving a rigid figure
+Error: Motion sampling not implemented
+ ❯ sampleMotion src/graphics/motions.ts:14:9
+     12|
+     13| export function sampleMotion(_spec: AnimationSpec, _phase: number): Mo…
+     14|   throw new Error('Motion sampling not implemented');
+       |         ^
+     15| }
+     16|
+ ❯ src/graphics/motions.test.ts:46:55
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[3/47]⎯
+
+ FAIL  src/graphics/motions.test.ts > procedural motion contract > holds the right arm when a curl is unilateral
+Error: Motion sampling not implemented
+ ❯ sampleMotion src/graphics/motions.ts:14:9
+     12|
+     13| export function sampleMotion(_spec: AnimationSpec, _phase: number): Mo…
+     14|   throw new Error('Motion sampling not implemented');
+       |         ^
+     15| }
+     16|
+ ❯ src/graphics/motions.test.ts:56:18
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[4/47]⎯
+
+ FAIL  src/graphics/motions.test.ts > procedural motion contract > holds static postures across the entire loop
+Error: Motion sampling not implemented
+ ❯ sampleMotion src/graphics/motions.ts:14:9
+     12|
+     13| export function sampleMotion(_spec: AnimationSpec, _phase: number): Mo…
+     14|   throw new Error('Motion sampling not implemented');
+       |         ^
+     15| }
+     16|
+ ❯ src/graphics/motions.test.ts:66:40
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[5/47]⎯
+
+ FAIL  src/graphics/motions.test.ts > procedural motion contract > gives each posture a distinct base transform
+Error: Motion sampling not implemented
+ ❯ sampleMotion src/graphics/motions.ts:14:9
+     12|
+     13| export function sampleMotion(_spec: AnimationSpec, _phase: number): Mo…
+     14|   throw new Error('Motion sampling not implemented');
+       |         ^
+     15| }
+     16|
+ ❯ src/graphics/motions.test.ts:73:54
+ ❯ src/graphics/motions.test.ts:73:26
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[6/47]⎯
+
+ FAIL  src/graphics/motions.test.ts > playback clock > preserves phase when inactive
+Error: Playback clock not implemented
+ ❯ advancePhase src/graphics/motions.ts:18:9
+     16|
+     17| export function advancePhase(_phase: number, _delta: number, _active: …
+     18|   throw new Error('Playback clock not implemented');
+       |         ^
+     19| }
+     20|
+ ❯ src/graphics/motions.test.ts:84:12
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[7/47]⎯
+
+ FAIL  src/graphics/motions.test.ts > playback clock > advances and wraps on the four-second repetition clock
+Error: Playback clock not implemented
+ ❯ advancePhase src/graphics/motions.ts:18:9
+     16|
+     17| export function advancePhase(_phase: number, _delta: number, _active: …
+     18|   throw new Error('Playback clock not implemented');
+       |         ^
+     19| }
+     20|
+ ❯ src/graphics/motions.test.ts:90:18
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[8/47]⎯
+
+ FAIL  src/graphics/motions.test.ts > playback clock > caps a resumed frame delta to avoid jumping after suspension
+Error: Playback clock not implemented
+ ❯ advancePhase src/graphics/motions.ts:18:9
+     16|
+     17| export function advancePhase(_phase: number, _delta: number, _active: …
+     18|   throw new Error('Playback clock not implemented');
+       |         ^
+     19| }
+     20|
+ ❯ src/graphics/motions.test.ts:98:18
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[9/47]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  47 failed (47)
+   Start at  11:46:15
+   Duration  1.13s (environment 71%, setup 16%, transform 6%, tests 3%, import 2%, worker 1%)
+
+error: script "test" exited with code 1

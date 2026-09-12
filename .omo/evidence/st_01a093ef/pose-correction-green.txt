@@ -1,0 +1,25 @@
+12:36:42 PM [vite] (client) Re-optimizing dependencies because vite config has changed
+12:36:43 PM [vite] (client) [console.warn] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+HIP_STATIC_TRANSFORMS=PASS SAMPLED_RENDER_FRAMES=20
+SCENARIO=hip PAGE_ERRORS=0 CAPTURES=2
+12:36:45 PM [vite] (client) [console.warn] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+SEATED_SQUAT=PASS ROOT_Y=0.65 HIPS=[-1.5,-1.5] SAMPLED_RENDER_FRAMES=20
+SCENARIO=seated PAGE_ERRORS=0 CAPTURES=2
+vite v8.3.0 building client environment for production...
+transforming...
+✓ 46 modules transformed.
+rendering chunks...
+computing gzip size...
+12:36:48 PM [vite] (client) page reload .omo/evidence/st_01a093ef/pose-correction-build/.omo/evidence/st_01a093ef/pose-correction.html
+.omo/evidence/st_01a093ef/pose-correction-build/.omo/evidence/st_01a093ef/pose-correction.html      0.39 kB │ gzip:   0.27 kB
+.omo/evidence/st_01a093ef/pose-correction-build/assets/pose-correction-Cs_plEQo.css                 3.36 kB │ gzip:   1.17 kB
+.omo/evidence/st_01a093ef/pose-correction-build/assets/pose-correction-D-sXjPg7.js              1,521.74 kB │ gzip: 419.29 kB
+
+[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 750ms
+POSE_CORRECTION_BUILD=PASS
+POSE_CORRECTION_SERVER_CLOSED port=5197

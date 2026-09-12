@@ -1,0 +1,186 @@
+$ vitest run --maxWorkers=4 --exclude=e2e/** src/graphics
+
+ RUN  v5.0.0 /home/norman/Repos/GPlan
+
+ ❯ src/graphics/motions.test.ts (57 tests | 5 failed) 455ms
+   ❯ procedural motion contract (54)
+     × holds unsupported hip-isolation raises as a static standing schematic 11ms
+     × holds unsupported hip-isolation raises as a static seated schematic 3ms
+     × holds unsupported hip-isolation raises as a static supine schematic 2ms
+     × holds unsupported hip-isolation raises as a static prone schematic 2ms
+     × holds unsupported hip-isolation raises as a static quadruped schematic 1ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 5 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/graphics/motions.test.ts > procedural motion contract > holds unsupported hip-isolation raises as a static standing schematic
+AssertionError: expected { position: [ +0, 1.04, +0 ], …(6) } to deeply equal { position: [ +0, 1.04, +0 ], …(6) }
+
+- Expected
++ Received
+
+@@ -6,10 +6,11 @@
+        0,
+        0,
+      ],
+    },
+    "leftLeg": {
++     "abduction": 0,
+      "ankle": 0,
+      "hip": 0,
+      "knee": 0,
+    },
+    "position": [
+@@ -24,10 +25,11 @@
+        0,
+        0,
+      ],
+    },
+    "rightLeg": {
++     "abduction": 0,
+      "ankle": 0,
+      "hip": 0,
+      "knee": 0,
+    },
+    "rotation": [
+
+ ❯ src/graphics/motions.test.ts:105:44
+    103|     const poses = [0, .125, .25, .5, .75, 1].map(phase => sampleMotion…
+    104|     // Then all joints retain the static posture rather than implying …
+    105|     for (const pose of poses) expect(pose).toEqual(staticPose);
+       |                                            ^
+    106|   });
+    107|
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/5]⎯
+
+ FAIL  src/graphics/motions.test.ts > procedural motion contract > holds unsupported hip-isolation raises as a static seated schematic
+AssertionError: expected { position: [ +0, 0.65, +0 ], …(6) } to deeply equal { position: [ +0, 0.65, +0 ], …(6) }
+
+- Expected
++ Received
+
+@@ -6,10 +6,11 @@
+        0,
+        0,
+      ],
+    },
+    "leftLeg": {
++     "abduction": 0,
+      "ankle": 0,
+      "hip": -1.5,
+      "knee": 1.5,
+    },
+    "position": [
+@@ -24,10 +25,11 @@
+        0,
+        0,
+      ],
+    },
+    "rightLeg": {
++     "abduction": 0,
+      "ankle": 0,
+      "hip": -1.5,
+      "knee": 1.5,
+    },
+    "rotation": [
+
+ ❯ src/graphics/motions.test.ts:105:44
+    103|     const poses = [0, .125, .25, .5, .75, 1].map(phase => sampleMotion…
+    104|     // Then all joints retain the static posture rather than implying …
+    105|     for (const pose of poses) expect(pose).toEqual(staticPose);
+       |                                            ^
+    106|   });
+    107|
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/5]⎯
+
+ FAIL  src/graphics/motions.test.ts > procedural motion contract > holds unsupported hip-isolation raises as a static supine schematic
+ FAIL  src/graphics/motions.test.ts > procedural motion contract > holds unsupported hip-isolation raises as a static prone schematic
+AssertionError: expected { position: [ +0, 0.63, +0 ], …(6) } to deeply equal { position: [ +0, 0.63, +0 ], …(6) }
+
+- Expected
++ Received
+
+@@ -6,10 +6,11 @@
+        0,
+        0,
+      ],
+    },
+    "leftLeg": {
++     "abduction": 0,
+      "ankle": 0,
+      "hip": 0,
+      "knee": 0,
+    },
+    "position": [
+@@ -24,10 +25,11 @@
+        0,
+        0,
+      ],
+    },
+    "rightLeg": {
++     "abduction": 0,
+      "ankle": 0,
+      "hip": 0,
+      "knee": 0,
+    },
+    "rotation": [
+
+ ❯ src/graphics/motions.test.ts:105:44
+    103|     const poses = [0, .125, .25, .5, .75, 1].map(phase => sampleMotion…
+    104|     // Then all joints retain the static posture rather than implying …
+    105|     for (const pose of poses) expect(pose).toEqual(staticPose);
+       |                                            ^
+    106|   });
+    107|
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[3/5]⎯
+
+ FAIL  src/graphics/motions.test.ts > procedural motion contract > holds unsupported hip-isolation raises as a static quadruped schematic
+AssertionError: expected { position: [ +0, 0.7, -0.3 ], …(6) } to deeply equal { position: [ +0, 0.7, -0.3 ], …(6) }
+
+- Expected
++ Received
+
+@@ -6,10 +6,11 @@
+        0,
+        0,
+      ],
+    },
+    "leftLeg": {
++     "abduction": 0,
+      "ankle": 0,
+      "hip": -1.4,
+      "knee": 1.4,
+    },
+    "position": [
+@@ -24,10 +25,11 @@
+        0,
+        0,
+      ],
+    },
+    "rightLeg": {
++     "abduction": 0,
+      "ankle": 0,
+      "hip": -1.4,
+      "knee": 1.4,
+    },
+    "rotation": [
+
+ ❯ src/graphics/motions.test.ts:105:44
+    103|     const poses = [0, .125, .25, .5, .75, 1].map(phase => sampleMotion…
+    104|     // Then all joints retain the static posture rather than implying …
+    105|     for (const pose of poses) expect(pose).toEqual(staticPose);
+       |                                            ^
+    106|   });
+    107|
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[4/5]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  5 failed | 52 passed (57)
+   Start at  12:34:08
+   Duration  1.86s (environment 56%, tests 28%, setup 11%, transform 4%, import 1%)
+
+error: script "test" exited with code 1
