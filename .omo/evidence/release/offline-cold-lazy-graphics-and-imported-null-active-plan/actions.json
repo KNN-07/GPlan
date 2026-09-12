@@ -1,0 +1,199 @@
+{
+  "test": "offline cold lazy graphics and imported null active plan",
+  "actions": [
+    {
+      "action": "open fresh app without any online exercise detail",
+      "completed": true
+    },
+    {
+      "action": "click Settings",
+      "completed": true
+    },
+    {
+      "action": "fill Backup JSON: {\"schemaVersion\":1,\"gym\":{\"availableEquipment\":[\"dumbbells\",\"bench\"]},\"activePlanId\":null,\"aiPreferences\":null,\"plans\":[{\"id\":\"imported-plan\",\"name\":\"Imported empty session\",\"source\":\"manual\",\"createdAt\":\"2026-09-12T00:00:00.000Z\",\"updatedAt\":\"2026-09-12T00:00:00.000Z\",\"days\":[{\"id\":\"imported-day\",\"name\":\"Empty day\",\"items\":[]}]}]}",
+      "completed": true
+    },
+    {
+      "action": "click Import backup",
+      "completed": true
+    },
+    {
+      "action": "click Plan",
+      "completed": true
+    },
+    {
+      "action": "click Add a movement",
+      "completed": true
+    },
+    {
+      "action": "click Add Dumbbell bench press to plan",
+      "completed": true
+    },
+    {
+      "action": "click View plan",
+      "completed": true
+    },
+    {
+      "action": "click Settings",
+      "completed": true
+    },
+    {
+      "action": "fill Manual model ID: offline-fixture",
+      "completed": true
+    },
+    {
+      "action": "click Save AI preferences",
+      "completed": true
+    },
+    {
+      "action": "await activated controller online",
+      "completed": true
+    },
+    {
+      "action": "set isolated context offline and await offline event",
+      "completed": true
+    },
+    {
+      "action": "reload shell offline; native browser offline state; uncached network blocked",
+      "completed": true
+    },
+    {
+      "action": "click Plan",
+      "completed": true
+    },
+    {
+      "action": "click Exercises",
+      "completed": true
+    },
+    {
+      "action": "first ever detail and lazy graphics import offline: Bodyweight squat",
+      "completed": true
+    },
+    {
+      "action": "click View Bodyweight squat",
+      "completed": true
+    },
+    {
+      "action": "nonempty real framebuffer",
+      "completed": true,
+      "proof": {
+        "sequence": 1,
+        "width": 310,
+        "height": 320,
+        "litPixels": 5242,
+        "highlightPixels": 721,
+        "fingerprint": 1927173793
+      }
+    },
+    {
+      "action": "measure overflow",
+      "completed": true,
+      "sizes": {
+        "viewport": 390,
+        "page": 390,
+        "dialogClient": 350,
+        "dialogScroll": 350
+      }
+    },
+    {
+      "action": "click Add to plan",
+      "completed": true
+    },
+    {
+      "action": "click View plan",
+      "completed": true
+    },
+    {
+      "action": "fill Plan name: Saved without a network",
+      "completed": true
+    },
+    {
+      "action": "edit first item to 4 sets offline",
+      "completed": true
+    },
+    {
+      "action": "reload edited plan offline; native browser offline state; uncached network blocked",
+      "completed": true
+    },
+    {
+      "action": "click Plan",
+      "completed": true
+    },
+    {
+      "action": "click Plan with AI",
+      "completed": true
+    },
+    {
+      "action": "measure overflow",
+      "completed": true,
+      "sizes": {
+        "viewport": 390,
+        "page": 390,
+        "dialogClient": 350,
+        "dialogScroll": 350
+      }
+    },
+    {
+      "action": "click Close dialog",
+      "completed": true
+    },
+    {
+      "action": "click Exercises",
+      "completed": true
+    },
+    {
+      "action": "measure overflow",
+      "completed": true,
+      "sizes": {
+        "viewport": 390,
+        "page": 390
+      }
+    },
+    {
+      "action": "click Plan",
+      "completed": true
+    },
+    {
+      "action": "measure overflow",
+      "completed": true,
+      "sizes": {
+        "viewport": 390,
+        "page": 390
+      }
+    },
+    {
+      "action": "click Settings",
+      "completed": true
+    },
+    {
+      "action": "measure overflow",
+      "completed": true,
+      "sizes": {
+        "viewport": 390,
+        "page": 390
+      }
+    }
+  ],
+  "screenshots": [
+    ".omo/evidence/release/offline-cold-lazy-graphics-and-imported-null-active-plan/offline-cold-real-3d.png",
+    ".omo/evidence/release/offline-cold-lazy-graphics-and-imported-null-active-plan/offline-ai-disabled.png"
+  ],
+  "pageErrors": [],
+  "consoleErrors": [
+    "Failed to load resource: net::ERR_INTERNET_DISCONNECTED",
+    "Failed to load resource: net::ERR_INTERNET_DISCONNECTED"
+  ],
+  "requests": [],
+  "contextClosed": true,
+  "serviceWorker": {
+    "controller": "http://127.0.0.1:4173/sw.js",
+    "active": "activated"
+  },
+  "onlineLazyGraphicsRequested": false,
+  "offlineGraphics": {
+    "url": "http://127.0.0.1:4173/assets/ExerciseViewer-DXa5X1EK.js",
+    "fromServiceWorker": true,
+    "status": 200
+  },
+  "status": "passed"
+}

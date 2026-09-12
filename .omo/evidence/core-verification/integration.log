@@ -1,0 +1,22 @@
+{
+  "result": "PASS",
+  "stages": [
+    "local plan",
+    "real HTTP discovery",
+    "real HTTP generation against bundled catalog",
+    "AI draft materialization",
+    "ranked available swap",
+    "strict state export/import",
+    "graphics sampling of all resulting items"
+  ],
+  "requests": [
+    "/v1/models",
+    "/v1/chat/completions"
+  ],
+  "eligibleCatalog": 52,
+  "savedPlans": 2,
+  "sampledItems": 16,
+  "persistedCredential": false
+}
+
+COMMAND_EXIT=0

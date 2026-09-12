@@ -1,0 +1,114 @@
+{
+  "test": "desktop surfaces and same canvas responsive camera",
+  "actions": [
+    {
+      "action": "open desktop production app",
+      "completed": true
+    },
+    {
+      "action": "click Plan",
+      "completed": true
+    },
+    {
+      "action": "measure overflow",
+      "completed": true,
+      "sizes": {
+        "viewport": 1440,
+        "page": 1440
+      }
+    },
+    {
+      "action": "click Settings",
+      "completed": true
+    },
+    {
+      "action": "measure overflow",
+      "completed": true,
+      "sizes": {
+        "viewport": 1440,
+        "page": 1440
+      }
+    },
+    {
+      "action": "click Exercises",
+      "completed": true
+    },
+    {
+      "action": "open desktop Dumbbell curl",
+      "completed": true
+    },
+    {
+      "action": "click View Dumbbell curl",
+      "completed": true
+    },
+    {
+      "action": "nonempty real framebuffer",
+      "completed": true,
+      "proof": {
+        "sequence": 1,
+        "width": 499,
+        "height": 440,
+        "litPixels": 10228,
+        "highlightPixels": 733,
+        "fingerprint": 1740266261
+      }
+    },
+    {
+      "action": "resize mounted desktop canvas to 375",
+      "completed": true
+    },
+    {
+      "action": "nonempty real framebuffer",
+      "completed": true,
+      "proof": {
+        "sequence": 3,
+        "width": 303,
+        "height": 320,
+        "litPixels": 5606,
+        "highlightPixels": 378,
+        "fingerprint": 3259816584
+      }
+    },
+    {
+      "action": "measure overflow",
+      "completed": true,
+      "sizes": {
+        "viewport": 375,
+        "page": 375,
+        "dialogClient": 335,
+        "dialogScroll": 335
+      }
+    },
+    {
+      "action": "use side camera on retained canvas",
+      "completed": true
+    },
+    {
+      "action": "click side view",
+      "completed": true
+    },
+    {
+      "action": "nonempty real framebuffer",
+      "completed": true,
+      "proof": {
+        "sequence": 4,
+        "width": 303,
+        "height": 320,
+        "litPixels": 2188,
+        "highlightPixels": 140,
+        "fingerprint": 1348184942
+      }
+    }
+  ],
+  "screenshots": [
+    ".omo/evidence/release/desktop-surfaces-and-same-canvas-responsive-camera/desktop-exercises.png",
+    ".omo/evidence/release/desktop-surfaces-and-same-canvas-responsive-camera/desktop-real-3d.png",
+    ".omo/evidence/release/desktop-surfaces-and-same-canvas-responsive-camera/retained-canvas-375.png",
+    ".omo/evidence/release/desktop-surfaces-and-same-canvas-responsive-camera/retained-canvas-side.png"
+  ],
+  "pageErrors": [],
+  "consoleErrors": [],
+  "requests": [],
+  "contextClosed": true,
+  "status": "passed"
+}

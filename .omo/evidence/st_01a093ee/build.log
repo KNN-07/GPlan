@@ -1,0 +1,11 @@
+$ bun run typecheck && vite build
+$ tsc -b
+src/graphics/ExerciseViewer.tsx(7,8): error TS2882: Cannot find module or type declarations for side-effect import of './viewer.css'.
+src/graphics/Scene.tsx(22,41): error TS2345: Argument of type '(frames?: number | undefined) => void' is not assignable to parameter of type 'EventListener<{}, "change", OrbitControls<Camera>>'.
+  Types of parameters 'frames' and 'event' are incompatible.
+    Type 'Event<"change", OrbitControls<Camera>>' is not assignable to type 'number'.
+src/graphics/Scene.tsx(26,46): error TS2345: Argument of type '(frames?: number | undefined) => void' is not assignable to parameter of type 'EventListener<{}, "change", OrbitControls<Camera>>'.
+  Types of parameters 'frames' and 'event' are incompatible.
+    Type 'Event<"change", OrbitControls<Camera>>' is not assignable to type 'number'.
+error: script "typecheck" exited with code 1
+error: script "build" exited with code 1

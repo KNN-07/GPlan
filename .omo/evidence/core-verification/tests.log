@@ -1,0 +1,16 @@
+$ vitest run --maxWorkers=4 --exclude=e2e/** src/core src/ai src/graphics
+
+ RUN  v5.0.0 /home/norman/Repos/GPlan
+
+
+ Test Files  7 passed (7)
+      Tests  191 passed (191)
+   Start at  12:40:45
+   Duration  1.88s (environment 47%, tests 19%, setup 15%, import 10%, transform 8%, worker 1%)
+
+Environment  jsdom was created 7 times · 2.88s total, 47% of tracked time
+             create it once per worker with pool: 'vmThreads' (keeps per-file isolation) or isolate: false (shares it across files)
+             learn more: https://vitest.dev/guide/improving-performance#test-environments
+
+
+COMMAND_EXIT=0

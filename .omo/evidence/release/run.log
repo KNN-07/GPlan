@@ -1,0 +1,20 @@
+$ playwright test
+[WebServer] $ bun run typecheck && vite build
+[WebServer] $ tsc -b
+[WebServer] [plugin builtin:vite-reporter] 
+[WebServer] (!) Some chunks are larger than 500 kB after minification. Consider:
+[WebServer] - Using dynamic import() to code-split the application
+[WebServer] - Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+[WebServer] - Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+[WebServer] $ vite preview --host 0.0.0.0 --host "127.0.0.1" --port "4173" --strictPort
+
+Running 5 tests using 2 workers
+
+  ✓  1 tests/e2e/release.spec.js:6:1 › mobile plan edit swap and persistence (6.0s)
+  ✓  2 tests/e2e/providers.spec.js:16:3 › gemini real adapter discovery preview errors and secret boundary (10.9s)
+  ✓  3 tests/e2e/release.spec.js:41:1 › offline cold lazy graphics and imported null active plan (5.6s)
+  ✓  5 tests/e2e/release.spec.js:104:1 › desktop surfaces and same canvas responsive camera (7.3s)
+  ✓  4 tests/e2e/providers.spec.js:16:3 › openai-compatible real adapter discovery preview errors and secret boundary (10.5s)
+
+  5 passed (26.2s)
+Final acceptance exit code: 0

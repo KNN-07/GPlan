@@ -1,0 +1,563 @@
+[
+  {
+    "scenario": "probe-desktop-detail",
+    "viewport": 1280,
+    "pageWidth": 1280,
+    "scrollX": 0,
+    "nodes": [
+      {
+        "selector": ".dialog",
+        "left": 120,
+        "right": 1160,
+        "width": 1040,
+        "scrollWidth": 1038,
+        "clientWidth": 1038,
+        "overflowX": "auto",
+        "gridTemplateColumns": "none",
+        "minWidth": "0px"
+      },
+      {
+        "selector": ".dialog-content",
+        "left": 121,
+        "right": 1159,
+        "width": 1038,
+        "scrollWidth": 1038,
+        "clientWidth": 1038,
+        "overflowX": "visible",
+        "gridTemplateColumns": "none",
+        "minWidth": "0px"
+      },
+      {
+        "selector": ".detail-grid",
+        "left": 149,
+        "right": 1131,
+        "width": 982,
+        "scrollWidth": 982,
+        "clientWidth": 982,
+        "overflowX": "visible",
+        "gridTemplateColumns": "499.703px 454.297px",
+        "minWidth": "0px"
+      },
+      {
+        "selector": ".exercise-viewer",
+        "left": 149,
+        "right": 648.703125,
+        "width": 499.703125,
+        "scrollWidth": 500,
+        "clientWidth": 500,
+        "overflowX": "hidden",
+        "gridTemplateColumns": "none",
+        "minWidth": "0px"
+      },
+      {
+        "selector": ".gv-scene",
+        "left": 149,
+        "right": 648.703125,
+        "width": 499.703125,
+        "scrollWidth": 500,
+        "clientWidth": 500,
+        "overflowX": "visible",
+        "gridTemplateColumns": "none",
+        "minWidth": "0px"
+      },
+      {
+        "selector": "canvas",
+        "left": 149,
+        "right": 648.703125,
+        "width": 499.703125,
+        "scrollWidth": 500,
+        "clientWidth": 500,
+        "overflowX": "clip",
+        "gridTemplateColumns": "none",
+        "minWidth": "0px"
+      },
+      {
+        "selector": ".catalog-hero",
+        "left": 268,
+        "right": 1232,
+        "width": 964,
+        "scrollWidth": 964,
+        "clientWidth": 964,
+        "overflowX": "visible",
+        "gridTemplateColumns": "535.391px 396.609px",
+        "minWidth": "0px"
+      },
+      {
+        "selector": ".filter-bar",
+        "left": 268,
+        "right": 1232,
+        "width": 964,
+        "scrollWidth": 964,
+        "clientWidth": 964,
+        "overflowX": "visible",
+        "gridTemplateColumns": "none",
+        "minWidth": "0px"
+      },
+      {
+        "selector": ".focus-chips",
+        "left": 268,
+        "right": 1232,
+        "width": 964,
+        "scrollWidth": 964,
+        "clientWidth": 964,
+        "overflowX": "visible",
+        "gridTemplateColumns": "none",
+        "minWidth": "0px"
+      },
+      {
+        "selector": ".results-line",
+        "left": 268,
+        "right": 1232,
+        "width": 964,
+        "scrollWidth": 964,
+        "clientWidth": 964,
+        "overflowX": "visible",
+        "gridTemplateColumns": "none",
+        "minWidth": "0px"
+      },
+      {
+        "selector": ".exercise-grid",
+        "left": 268,
+        "right": 1232,
+        "width": 964,
+        "scrollWidth": 964,
+        "clientWidth": 964,
+        "overflowX": "visible",
+        "gridTemplateColumns": "309.328px 309.328px 309.344px",
+        "minWidth": "0px"
+      }
+    ]
+  },
+  {
+    "scenario": "probe-resized-mobile-detail",
+    "viewport": 375,
+    "pageWidth": 379,
+    "scrollX": 0,
+    "nodes": [
+      {
+        "selector": ".dialog",
+        "left": 19,
+        "right": 356,
+        "width": 337,
+        "scrollWidth": 466,
+        "clientWidth": 335,
+        "overflowX": "auto",
+        "gridTemplateColumns": "none",
+        "minWidth": "0px"
+      },
+      {
+        "selector": ".dialog-content",
+        "left": 4,
+        "right": 339,
+        "width": 335,
+        "scrollWidth": 466,
+        "clientWidth": 335,
+        "overflowX": "visible",
+        "gridTemplateColumns": "none",
+        "minWidth": "0px"
+      },
+      {
+        "selector": ".detail-grid",
+        "left": 20,
+        "right": 323,
+        "width": 303,
+        "scrollWidth": 450,
+        "clientWidth": 303,
+        "overflowX": "visible",
+        "gridTemplateColumns": "450px",
+        "minWidth": "0px"
+      },
+      {
+        "selector": ".exercise-viewer",
+        "left": 20,
+        "right": 470,
+        "width": 450,
+        "scrollWidth": 450,
+        "clientWidth": 450,
+        "overflowX": "hidden",
+        "gridTemplateColumns": "none",
+        "minWidth": "0px"
+      },
+      {
+        "selector": ".gv-scene",
+        "left": 20,
+        "right": 470,
+        "width": 450,
+        "scrollWidth": 450,
+        "clientWidth": 450,
+        "overflowX": "visible",
+        "gridTemplateColumns": "none",
+        "minWidth": "0px"
+      },
+      {
+        "selector": "canvas",
+        "left": 20,
+        "right": 470,
+        "width": 450,
+        "scrollWidth": 450,
+        "clientWidth": 450,
+        "overflowX": "clip",
+        "gridTemplateColumns": "none",
+        "minWidth": "0px"
+      },
+      {
+        "selector": ".catalog-hero",
+        "left": 16,
+        "right": 359,
+        "width": 343,
+        "scrollWidth": 343,
+        "clientWidth": 343,
+        "overflowX": "visible",
+        "gridTemplateColumns": "343px",
+        "minWidth": "0px"
+      },
+      {
+        "selector": ".filter-bar",
+        "left": 16,
+        "right": 359,
+        "width": 343,
+        "scrollWidth": 343,
+        "clientWidth": 343,
+        "overflowX": "visible",
+        "gridTemplateColumns": "none",
+        "minWidth": "0px"
+      },
+      {
+        "selector": ".focus-chips",
+        "left": 16,
+        "right": 379,
+        "width": 363,
+        "scrollWidth": 864,
+        "clientWidth": 363,
+        "overflowX": "auto",
+        "gridTemplateColumns": "none",
+        "minWidth": "0px"
+      },
+      {
+        "selector": ".results-line",
+        "left": 16,
+        "right": 359,
+        "width": 343,
+        "scrollWidth": 343,
+        "clientWidth": 343,
+        "overflowX": "visible",
+        "gridTemplateColumns": "none",
+        "minWidth": "0px"
+      },
+      {
+        "selector": ".exercise-grid",
+        "left": 16,
+        "right": 359,
+        "width": 343,
+        "scrollWidth": 343,
+        "clientWidth": 343,
+        "overflowX": "visible",
+        "gridTemplateColumns": "343px",
+        "minWidth": "0px"
+      }
+    ]
+  },
+  {
+    "scenario": "probe-mobile-closed",
+    "viewport": 375,
+    "pageWidth": 379,
+    "scrollX": 0,
+    "nodes": [
+      {
+        "selector": ".dialog",
+        "absent": true
+      },
+      {
+        "selector": ".dialog-content",
+        "absent": true
+      },
+      {
+        "selector": ".detail-grid",
+        "absent": true
+      },
+      {
+        "selector": ".exercise-viewer",
+        "absent": true
+      },
+      {
+        "selector": ".gv-scene",
+        "absent": true
+      },
+      {
+        "selector": "canvas",
+        "absent": true
+      },
+      {
+        "selector": ".catalog-hero",
+        "left": 16,
+        "right": 359,
+        "width": 343,
+        "scrollWidth": 343,
+        "clientWidth": 343,
+        "overflowX": "visible",
+        "gridTemplateColumns": "343px",
+        "minWidth": "0px"
+      },
+      {
+        "selector": ".filter-bar",
+        "left": 16,
+        "right": 359,
+        "width": 343,
+        "scrollWidth": 343,
+        "clientWidth": 343,
+        "overflowX": "visible",
+        "gridTemplateColumns": "none",
+        "minWidth": "0px"
+      },
+      {
+        "selector": ".focus-chips",
+        "left": 16,
+        "right": 379,
+        "width": 363,
+        "scrollWidth": 864,
+        "clientWidth": 363,
+        "overflowX": "auto",
+        "gridTemplateColumns": "none",
+        "minWidth": "0px"
+      },
+      {
+        "selector": ".results-line",
+        "left": 16,
+        "right": 359,
+        "width": 343,
+        "scrollWidth": 343,
+        "clientWidth": 343,
+        "overflowX": "visible",
+        "gridTemplateColumns": "none",
+        "minWidth": "0px"
+      },
+      {
+        "selector": ".exercise-grid",
+        "left": 16,
+        "right": 359,
+        "width": 343,
+        "scrollWidth": 343,
+        "clientWidth": 343,
+        "overflowX": "visible",
+        "gridTemplateColumns": "343px",
+        "minWidth": "0px"
+      }
+    ]
+  },
+  {
+    "scenario": "probe-fresh-mobile-home",
+    "viewport": 375,
+    "pageWidth": 379,
+    "scrollX": 0,
+    "nodes": [
+      {
+        "selector": ".dialog",
+        "absent": true
+      },
+      {
+        "selector": ".dialog-content",
+        "absent": true
+      },
+      {
+        "selector": ".detail-grid",
+        "absent": true
+      },
+      {
+        "selector": ".exercise-viewer",
+        "absent": true
+      },
+      {
+        "selector": ".gv-scene",
+        "absent": true
+      },
+      {
+        "selector": "canvas",
+        "absent": true
+      },
+      {
+        "selector": ".catalog-hero",
+        "left": 16,
+        "right": 359,
+        "width": 343,
+        "scrollWidth": 343,
+        "clientWidth": 343,
+        "overflowX": "visible",
+        "gridTemplateColumns": "343px",
+        "minWidth": "0px"
+      },
+      {
+        "selector": ".filter-bar",
+        "left": 16,
+        "right": 359,
+        "width": 343,
+        "scrollWidth": 343,
+        "clientWidth": 343,
+        "overflowX": "visible",
+        "gridTemplateColumns": "none",
+        "minWidth": "0px"
+      },
+      {
+        "selector": ".focus-chips",
+        "left": 16,
+        "right": 379,
+        "width": 363,
+        "scrollWidth": 864,
+        "clientWidth": 363,
+        "overflowX": "auto",
+        "gridTemplateColumns": "none",
+        "minWidth": "0px"
+      },
+      {
+        "selector": ".results-line",
+        "left": 16,
+        "right": 359,
+        "width": 343,
+        "scrollWidth": 343,
+        "clientWidth": 343,
+        "overflowX": "visible",
+        "gridTemplateColumns": "none",
+        "minWidth": "0px"
+      },
+      {
+        "selector": ".exercise-grid",
+        "left": 16,
+        "right": 359,
+        "width": 343,
+        "scrollWidth": 343,
+        "clientWidth": 343,
+        "overflowX": "visible",
+        "gridTemplateColumns": "343px",
+        "minWidth": "0px"
+      }
+    ]
+  },
+  {
+    "scenario": "probe-fresh-mobile-detail",
+    "viewport": 375,
+    "pageWidth": 379,
+    "scrollX": 0,
+    "nodes": [
+      {
+        "selector": ".dialog",
+        "left": 19,
+        "right": 356,
+        "width": 337,
+        "scrollWidth": 335,
+        "clientWidth": 335,
+        "overflowX": "auto",
+        "gridTemplateColumns": "none",
+        "minWidth": "0px"
+      },
+      {
+        "selector": ".dialog-content",
+        "left": 20,
+        "right": 355,
+        "width": 335,
+        "scrollWidth": 335,
+        "clientWidth": 335,
+        "overflowX": "visible",
+        "gridTemplateColumns": "none",
+        "minWidth": "0px"
+      },
+      {
+        "selector": ".detail-grid",
+        "left": 36,
+        "right": 339,
+        "width": 303,
+        "scrollWidth": 303,
+        "clientWidth": 303,
+        "overflowX": "visible",
+        "gridTemplateColumns": "303px",
+        "minWidth": "0px"
+      },
+      {
+        "selector": ".exercise-viewer",
+        "left": 36,
+        "right": 339,
+        "width": 303,
+        "scrollWidth": 303,
+        "clientWidth": 303,
+        "overflowX": "hidden",
+        "gridTemplateColumns": "none",
+        "minWidth": "0px"
+      },
+      {
+        "selector": ".gv-scene",
+        "left": 36,
+        "right": 339,
+        "width": 303,
+        "scrollWidth": 303,
+        "clientWidth": 303,
+        "overflowX": "visible",
+        "gridTemplateColumns": "none",
+        "minWidth": "0px"
+      },
+      {
+        "selector": "canvas",
+        "left": 36,
+        "right": 339,
+        "width": 303,
+        "scrollWidth": 303,
+        "clientWidth": 303,
+        "overflowX": "clip",
+        "gridTemplateColumns": "none",
+        "minWidth": "0px"
+      },
+      {
+        "selector": ".catalog-hero",
+        "left": 16,
+        "right": 359,
+        "width": 343,
+        "scrollWidth": 343,
+        "clientWidth": 343,
+        "overflowX": "visible",
+        "gridTemplateColumns": "343px",
+        "minWidth": "0px"
+      },
+      {
+        "selector": ".filter-bar",
+        "left": 16,
+        "right": 359,
+        "width": 343,
+        "scrollWidth": 343,
+        "clientWidth": 343,
+        "overflowX": "visible",
+        "gridTemplateColumns": "none",
+        "minWidth": "0px"
+      },
+      {
+        "selector": ".focus-chips",
+        "left": 16,
+        "right": 379,
+        "width": 363,
+        "scrollWidth": 864,
+        "clientWidth": 363,
+        "overflowX": "auto",
+        "gridTemplateColumns": "none",
+        "minWidth": "0px"
+      },
+      {
+        "selector": ".results-line",
+        "left": 16,
+        "right": 359,
+        "width": 343,
+        "scrollWidth": 343,
+        "clientWidth": 343,
+        "overflowX": "visible",
+        "gridTemplateColumns": "none",
+        "minWidth": "0px"
+      },
+      {
+        "selector": ".exercise-grid",
+        "left": 16,
+        "right": 359,
+        "width": 343,
+        "scrollWidth": 343,
+        "clientWidth": 343,
+        "overflowX": "visible",
+        "gridTemplateColumns": "343px",
+        "minWidth": "0px"
+      }
+    ]
+  }
+]

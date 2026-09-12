@@ -1,0 +1,74 @@
+{
+  "test": "offline cold lazy graphics and imported null active plan",
+  "actions": [
+    {
+      "action": "open fresh app without any online exercise detail",
+      "completed": true
+    },
+    {
+      "action": "click Settings",
+      "completed": true
+    },
+    {
+      "action": "fill Backup JSON: {\"schemaVersion\":1,\"gym\":{\"availableEquipment\":[\"dumbbells\",\"bench\"]},\"activePlanId\":null,\"aiPreferences\":null,\"plans\":[{\"id\":\"imported-plan\",\"name\":\"Imported empty session\",\"source\":\"manual\",\"createdAt\":\"2026-09-12T00:00:00.000Z\",\"updatedAt\":\"2026-09-12T00:00:00.000Z\",\"days\":[{\"id\":\"imported-day\",\"name\":\"Empty day\",\"items\":[]}]}]}",
+      "completed": true
+    },
+    {
+      "action": "click Import backup",
+      "completed": true
+    },
+    {
+      "action": "click Plan",
+      "completed": true
+    },
+    {
+      "action": "click Add a movement",
+      "completed": true
+    },
+    {
+      "action": "click Add Dumbbell bench press to plan",
+      "completed": true
+    },
+    {
+      "action": "click View plan",
+      "completed": true
+    },
+    {
+      "action": "click Settings",
+      "completed": true
+    },
+    {
+      "action": "fill Manual model ID: offline-fixture",
+      "completed": true
+    },
+    {
+      "action": "click Save AI preferences",
+      "completed": true
+    },
+    {
+      "action": "await activated controller online",
+      "completed": true
+    },
+    {
+      "action": "set isolated context offline and await offline event",
+      "completed": true
+    },
+    {
+      "action": "reload shell offline",
+      "completed": true
+    }
+  ],
+  "screenshots": [
+    ".omo/evidence/release/offline-cold-lazy-graphics-and-imported-null-active-plan/failure.png"
+  ],
+  "pageErrors": [],
+  "consoleErrors": [],
+  "requests": [],
+  "contextClosed": true,
+  "serviceWorker": {
+    "controller": "http://127.0.0.1:4173/sw.js",
+    "active": "activated"
+  },
+  "onlineLazyGraphicsRequested": false,
+  "status": "failed"
+}

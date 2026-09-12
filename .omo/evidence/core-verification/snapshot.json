@@ -1,0 +1,170 @@
+{
+  "src/contracts.ts": {
+    "sha256": "190487b273821b99ed7cf198ff90ad314b080475a1b4441a7bfb05e37f36ea6d",
+    "mtime": 1789190833.2423334
+  },
+  ".omo/contracts.md": {
+    "sha256": "4bfb90f633b2aa6dd6a5b6185cfc7940e7d1326f477c55f924a827468c8fccdf",
+    "mtime": 1789188103.6031613
+  },
+  "src/core/planner.ts": {
+    "sha256": "3267933a34261342cbd99f559052ecf35846ba52cdfe9d09b20d3c6da286f4ee",
+    "mtime": 1789189502.2312784
+  },
+  "src/core/state-schema.ts": {
+    "sha256": "c3bb57eab2cb4dadee0ece05d345cd892345b0a309cdc4d02a175368575d189f",
+    "mtime": 1789189070.2494457
+  },
+  "src/core/catalog.test.ts": {
+    "sha256": "a0ee3c70c3d68d92ef2721e7f115df4ee5746777e4d73a995e5ba8d5e07566c9",
+    "mtime": 1789190833.4363344
+  },
+  "src/core/catalog.ts": {
+    "sha256": "d6647d79ce941a093930fd3f2b714842bde40c5cb5c41058f134e57b3a46b795",
+    "mtime": 1789189070.2494457
+  },
+  "src/core/storage.test.ts": {
+    "sha256": "669df337b1642e76ce82f890fd88f9c82397014e7299728b7e43dce5dc44667f",
+    "mtime": 1789189207.4719183
+  },
+  "src/core/planner.test.ts": {
+    "sha256": "0a4283e90b01c13ad5927f3a7371edd732f20fa7ed8a333f7239761339efdb7f",
+    "mtime": 1789190833.4793344
+  },
+  "src/core/storage.ts": {
+    "sha256": "450a88ab5b026d1f6aaae740753d38153bd7612961cfbcd04f801913d8c33b3f",
+    "mtime": 1789189564.0895803
+  },
+  "src/ai/fixture.ts": {
+    "sha256": "b0fda9fe70e8c1e97c9d327ddc263b10e2395eeae83f8611944b8b5333aaa9c6",
+    "mtime": 1789188459.851528
+  },
+  "src/ai/validation.test.ts": {
+    "sha256": "9ae64b1ed356f9f0ac0b5e0f0082affd6260d8f73e282b31abe0d1a50f2aefbb",
+    "mtime": 1789188801.7390225
+  },
+  "src/ai/gemini.ts": {
+    "sha256": "b9043c0fb268834f0c014f96001c9e6907ca71b42a6986277057417dcfc258b8",
+    "mtime": 1789188658.8503613
+  },
+  "src/ai/error.ts": {
+    "sha256": "db2f81c6b31e79ec8050af62d82b96d9f6b6ec88bfcae409ce425c144d407033",
+    "mtime": 1789188658.846039
+  },
+  "src/ai/index.ts": {
+    "sha256": "d34bc9c9e2cf30e729791243d3c3c267aeaaa324015c6c622190fa3ecb268c75",
+    "mtime": 1789188658.8534281
+  },
+  "src/ai/transport.ts": {
+    "sha256": "b9d50b34e975c3b8fa5531ddef5e95289b76049f7197c5dcc84cb7a6ee852b28",
+    "mtime": 1789188658.847522
+  },
+  "src/ai/openai.ts": {
+    "sha256": "8be3bc3683f2170574c06ca4c76ba60b291c3a2adfaa8f063c6271fc207b04ab",
+    "mtime": 1789188658.848964
+  },
+  "src/ai/failures.test.ts": {
+    "sha256": "2e1452dcc8c65e3b36f459bde30a9a6ad52737b7d7c1d95a0c9ff85d7c413d12",
+    "mtime": 1789188537.6051435
+  },
+  "src/ai/validation.ts": {
+    "sha256": "9f97dd35f0b2186e5205b760cb3c82d8e12f3a051664991aee8888a8fcfcdf94",
+    "mtime": 1789188658.8518133
+  },
+  "src/ai/providers.test.ts": {
+    "sha256": "ca37782628ffc265d879ed8ff1be3926ba29250e6676ed0b01044f6165e27ed9",
+    "mtime": 1789188801.7372673
+  },
+  "src/graphics/Scene.tsx": {
+    "sha256": "0189692bd9170e921c2d3d7be831f2181a6ab9d2b2e7f93096390493ff33a95d",
+    "mtime": 1789188933.1013658
+  },
+  "src/graphics/ExerciseViewer.tsx": {
+    "sha256": "862e7478dddd81c289ebe48df2f7715c833f800888d5e99e334dab46456f1663",
+    "mtime": 1789190593.0907223
+  },
+  "src/graphics/palette.ts": {
+    "sha256": "1cdc626504d25316accf1e66cef94def335f5381af7874d3f1660accf5497b5b",
+    "mtime": 1789188594.0738053
+  },
+  "src/graphics/Primitives.tsx": {
+    "sha256": "c9609b632d9825c49132c9b3d134ce387f8441cc595baf46840afb12ba54111a",
+    "mtime": 1789188594.0756214
+  },
+  "src/graphics/motions.ts": {
+    "sha256": "93bbac8e1236b00f50ef9f27be7046345360b0137b05dd3d94587bf07209f889",
+    "mtime": 1789191284.874172
+  },
+  "src/graphics/motions.test.ts": {
+    "sha256": "5de6248bab7f989f279737b62b85af1f6c8d58d95c1f90fc8d1942adbc2a32fc",
+    "mtime": 1789191247.7949362
+  },
+  "src/graphics/Equipment.tsx": {
+    "sha256": "b0f92ca7638f1c62442844a92df726a6770d9927430b8981b88361aec7c5a1fd",
+    "mtime": 1789188594.075692
+  },
+  "src/graphics/viewer.css": {
+    "sha256": "0d50125acc19ef5d30956969b1b88cc4c3c4b20a83f5744c1f8a9649c61add5c",
+    "mtime": 1789189082.5763865
+  },
+  "src/graphics/Figure.tsx": {
+    "sha256": "7ef90516789a44aa19224938287afbc06d21930a56f686c1b51f72e52573efcc",
+    "mtime": 1789191284.8751693
+  },
+  "src/graphics/viewer.css.d.ts": {
+    "sha256": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
+    "mtime": 1789188933.1014032
+  },
+  "src/catalog/upper.ts": {
+    "sha256": "bd958bf1e7285cccc9269d521586f17279aece37ae8b1d4ea025188e270fac9c",
+    "mtime": 1789188620.4258962
+  },
+  "src/catalog/taxonomy.ts": {
+    "sha256": "94355d8063de908f39c4bfc0811fd816e9272c26e7e909a38f99892b98c5c693",
+    "mtime": 1789190833.2983336
+  },
+  "src/catalog/index.ts": {
+    "sha256": "db612fba65060c99e85a58c9f818d7206580e10b5d32b6164cadaafef73aef9c",
+    "mtime": 1789188934.4339778
+  },
+  "src/catalog/lower.ts": {
+    "sha256": "6edc390e3f7768563c772a4de503e6a07b7c6fe5b4507f50cdbdab890ae4d35e",
+    "mtime": 1789190833.4003341
+  },
+  "src/catalog/build.ts": {
+    "sha256": "e721061c9c959c8dbf7a5102d01e772630c6e4d92c5f1a5a341006604f9ff8a7",
+    "mtime": 1789189258.5270941
+  },
+  "src/catalog/core.ts": {
+    "sha256": "917d428452be54fed35f11ef7450f11436d312bb1cc5d2718f77a01d822a4544",
+    "mtime": 1789190833.340334
+  },
+  "src/catalog/arms.ts": {
+    "sha256": "3bf408b0e699ce7b41689d7961a571f4e891f8f65929a0bf093dd9821eee066e",
+    "mtime": 1789189258.528094
+  },
+  "src/styles.css": {
+    "sha256": "fd78ba429640c9680633d4f965dae2f152a8a68e08f87236743a1e52baba2e74",
+    "mtime": 1789191820.9290135
+  },
+  "dist/assets/index-CUiKJW5k.js": {
+    "sha256": "b337a8f1221caca0bbfe9f431d238c9f6cf1763b63cd319d059b6fb00d7b145c",
+    "mtime": 1789191694.8513312
+  },
+  "dist/assets/ExerciseViewer-CpHUm-va.js": {
+    "sha256": "e63979d0e91d13d6afd33768206b152c1b4a675685fbedd900ac60d8aa1564e9",
+    "mtime": 1789191694.8524776
+  },
+  "dist/assets/index-D5ezoilf.css": {
+    "sha256": "73588aa30acf7ad83bbf75e1e1ed0c39b955f84df24501500584e15fdfcf34c5",
+    "mtime": 1789191694.8527334
+  },
+  "dist/assets/ExerciseViewer-Cs_plEQo.css": {
+    "sha256": "a306640a76fd4f9efe730f8efe05eadd24d122a7e14ea32884f58b1e9691d898",
+    "mtime": 1789191694.8527172
+  },
+  "dist/assets/workbox-window.prod.es5-Bd17z0YL.js": {
+    "sha256": "17bcc17d60dc78f927834b880c39649b03af46fd1f5cdbb8c42c5ae2b515dce9",
+    "mtime": 1789191694.852698
+  }
+}

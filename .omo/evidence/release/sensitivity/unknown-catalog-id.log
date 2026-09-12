@@ -1,0 +1,43 @@
+$ playwright test --grep "openai-compatible real"
+[WebServer] $ bun run typecheck && vite build
+[WebServer] $ tsc -b
+[WebServer] [plugin builtin:vite-reporter] 
+[WebServer] (!) Some chunks are larger than 500 kB after minification. Consider:
+[WebServer] - Using dynamic import() to code-split the application
+[WebServer] - Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+[WebServer] - Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+[WebServer] $ vite preview --host 0.0.0.0 --host "127.0.0.1" --port "4173" --strictPort
+
+Running 1 test using 1 worker
+
+  ✘  1 tests/e2e/providers.spec.js:16:3 › openai-compatible real adapter discovery preview errors and secret boundary (9.0s)
+
+
+  1) tests/e2e/providers.spec.js:16:3 › openai-compatible real adapter discovery preview errors and secret boundary 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: getByRole('button', { name: 'Accept plan', exact: true })
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" getByRole('button', { name: 'Accept plan', exact: true }) with timeout 5000ms
+      - waiting for getByRole('button', { name: 'Accept plan', exact: true })
+
+
+      80 |     await qa.select('Exercises per day', '3');
+      81 |     await qa.click('Generate preview');
+    > 82 |     await expect(page.getByRole('button', { name: 'Accept plan', exact: true })).toBeVisible();
+         |                                                                                  ^
+      83 |     await expect(page.locator('.ai-preview li')).toHaveCount(3);
+      84 |     expect(await savedState(page)).toEqual(beforePreview);
+      85 |     await page.getByRole('button', { name: 'Accept plan', exact: true }).scrollIntoViewIfNeeded();
+        at /home/norman/Repos/GPlan/tests/e2e/providers.spec.js:82:82
+
+    Error Context: .omo/evidence/release/test-results/providers-openai-compatibl-74171--errors-and-secret-boundary/error-context.md
+
+  1 failed
+    tests/e2e/providers.spec.js:16:3 › openai-compatible real adapter discovery preview errors and secret boundary 
+error: script "test:e2e" exited with code 1

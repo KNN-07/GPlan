@@ -1,0 +1,100 @@
+{
+  "test": "mobile plan edit swap and persistence",
+  "actions": [
+    {
+      "action": "open production app",
+      "completed": true
+    },
+    {
+      "action": "click Chest",
+      "completed": true
+    },
+    {
+      "action": "select Filter equipment: dumbbells",
+      "completed": true
+    },
+    {
+      "action": "enable My gym only",
+      "completed": true
+    },
+    {
+      "action": "open Dumbbell bench press",
+      "completed": true
+    },
+    {
+      "action": "click View Dumbbell bench press",
+      "completed": true
+    },
+    {
+      "action": "nonempty real framebuffer",
+      "completed": true,
+      "proof": {
+        "sequence": 1,
+        "width": 310,
+        "height": 320,
+        "litPixels": 3370,
+        "highlightPixels": 124,
+        "fingerprint": 110767349
+      }
+    },
+    {
+      "action": "measure overflow",
+      "completed": true,
+      "sizes": {
+        "viewport": 390,
+        "page": 390,
+        "dialogClient": 350,
+        "dialogScroll": 350
+      }
+    },
+    {
+      "action": "click Add to plan",
+      "completed": true
+    },
+    {
+      "action": "click View plan",
+      "completed": true
+    },
+    {
+      "action": "fill Plan name: Release strength",
+      "completed": true
+    },
+    {
+      "action": "fill Sets: 4",
+      "completed": true
+    },
+    {
+      "action": "click Swap exercise",
+      "completed": true
+    },
+    {
+      "action": "choose compatible Dumbbell floor press",
+      "completed": true
+    },
+    {
+      "action": "reload saved mobile plan",
+      "completed": true
+    },
+    {
+      "action": "click Plan",
+      "completed": true
+    },
+    {
+      "action": "measure overflow",
+      "completed": true,
+      "sizes": {
+        "viewport": 390,
+        "page": 390
+      }
+    }
+  ],
+  "screenshots": [
+    ".omo/evidence/release/mobile-plan-edit-swap-and-persistence/mobile-real-3d.png",
+    ".omo/evidence/release/mobile-plan-edit-swap-and-persistence/mobile-saved-plan.png"
+  ],
+  "pageErrors": [],
+  "consoleErrors": [],
+  "requests": [],
+  "contextClosed": true,
+  "status": "passed"
+}

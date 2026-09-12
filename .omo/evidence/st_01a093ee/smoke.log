@@ -1,0 +1,2 @@
+PUBLIC_API_SMOKE: discovery, generation, authentication mapping passed; HTTP requests=3
+CLEANUP: fixture server and sockets closed

@@ -1,0 +1,205 @@
+{
+  "test": "openai-compatible real adapter discovery preview errors and secret boundary",
+  "actions": [
+    {
+      "action": "open fresh provider fixture context",
+      "completed": true
+    },
+    {
+      "action": "click Add Bodyweight squat to plan",
+      "completed": true
+    },
+    {
+      "action": "click View plan",
+      "completed": true
+    },
+    {
+      "action": "fill Plan name: Existing manual plan",
+      "completed": true
+    },
+    {
+      "action": "click Settings",
+      "completed": true
+    },
+    {
+      "action": "select Provider: openai-compatible",
+      "completed": true
+    },
+    {
+      "action": "fill Provider root URL: https://gplan-fixture.invalid/api/v1",
+      "completed": true
+    },
+    {
+      "action": "fill API key: [memory-only sentinel]",
+      "completed": true
+    },
+    {
+      "action": "click Discover models",
+      "completed": true
+    },
+    {
+      "action": "select Discovered models: release-fixture-model",
+      "completed": true
+    },
+    {
+      "action": "click Save AI preferences",
+      "completed": true
+    },
+    {
+      "action": "click Plan",
+      "completed": true
+    },
+    {
+      "action": "click Plan with AI",
+      "completed": true
+    },
+    {
+      "action": "select Days per week: 1",
+      "completed": true
+    },
+    {
+      "action": "select Exercises per day: 3",
+      "completed": true
+    },
+    {
+      "action": "click Generate preview",
+      "completed": true
+    },
+    {
+      "action": "click Accept plan",
+      "completed": true
+    },
+    {
+      "action": "click Dismiss notification",
+      "completed": true
+    },
+    {
+      "action": "click Plan with AI",
+      "completed": true
+    },
+    {
+      "action": "select Days per week: 1",
+      "completed": true
+    },
+    {
+      "action": "select Exercises per day: 3",
+      "completed": true
+    },
+    {
+      "action": "click Generate preview",
+      "completed": true
+    },
+    {
+      "action": "click Close dialog",
+      "completed": true
+    },
+    {
+      "action": "click Plan with AI",
+      "completed": true
+    },
+    {
+      "action": "select Days per week: 1",
+      "completed": true
+    },
+    {
+      "action": "select Exercises per day: 3",
+      "completed": true
+    },
+    {
+      "action": "click Generate preview",
+      "completed": true
+    },
+    {
+      "action": "click Close dialog",
+      "completed": true
+    },
+    {
+      "action": "click Settings",
+      "completed": true
+    },
+    {
+      "action": "click Export JSON backup",
+      "completed": true
+    },
+    {
+      "action": "reload clears in-memory API key",
+      "completed": true
+    },
+    {
+      "action": "click Settings",
+      "completed": true
+    },
+    {
+      "action": "fill Provider root URL: http://provider.example/v1",
+      "completed": true
+    },
+    {
+      "action": "click Save AI preferences",
+      "completed": true
+    },
+    {
+      "action": "fill Provider root URL: http://localhost:11434/v1",
+      "completed": true
+    },
+    {
+      "action": "click Save AI preferences",
+      "completed": true
+    },
+    {
+      "action": "reload saved localhost URL",
+      "completed": true
+    },
+    {
+      "action": "click Settings",
+      "completed": true
+    },
+    {
+      "action": "measure overflow",
+      "completed": true,
+      "sizes": {
+        "viewport": 1440,
+        "page": 1440
+      }
+    }
+  ],
+  "screenshots": [
+    ".omo/evidence/release/openai-compatible-real-adapter-discovery-preview-errors-and-secret-boundary/discovered-selected-saved.png",
+    ".omo/evidence/release/openai-compatible-real-adapter-discovery-preview-errors-and-secret-boundary/valid-preview-not-saved.png",
+    ".omo/evidence/release/openai-compatible-real-adapter-discovery-preview-errors-and-secret-boundary/accepted-real-plan.png",
+    ".omo/evidence/release/openai-compatible-real-adapter-discovery-preview-errors-and-secret-boundary/malformed-error-existing-plan-preserved.png",
+    ".omo/evidence/release/openai-compatible-real-adapter-discovery-preview-errors-and-secret-boundary/401-error-existing-plan-preserved.png",
+    ".omo/evidence/release/openai-compatible-real-adapter-discovery-preview-errors-and-secret-boundary/remote-http-rejected.png"
+  ],
+  "pageErrors": [],
+  "consoleErrors": [
+    "Failed to load resource: the server responded with a status of 401 (Unauthorized)"
+  ],
+  "requests": [
+    {
+      "url": "https://gplan-fixture.invalid/api/v1/models",
+      "method": "GET"
+    },
+    {
+      "url": "https://gplan-fixture.invalid/api/v1/chat/completions",
+      "mode": "valid",
+      "requestedDays": 1,
+      "requestedItems": 3
+    },
+    {
+      "url": "https://gplan-fixture.invalid/api/v1/chat/completions",
+      "mode": "malformed",
+      "requestedDays": 1,
+      "requestedItems": 3
+    },
+    {
+      "url": "https://gplan-fixture.invalid/api/v1/chat/completions",
+      "mode": "401",
+      "requestedDays": 1,
+      "requestedItems": 3
+    }
+  ],
+  "contextClosed": true,
+  "liveProvider": "unverified: no live credentials; HTTP fixtures only",
+  "downloadDeleted": true,
+  "status": "passed"
+}

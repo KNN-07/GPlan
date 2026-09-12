@@ -1,0 +1,770 @@
+{
+  "config": {
+    "argv": [
+      "/home/norman/.nvm/versions/node/v24.20.0/bin/node",
+      "/home/norman/Repos/GPlan/node_modules/.bin/playwright",
+      "test"
+    ],
+    "configFile": "/home/norman/Repos/GPlan/playwright.config.ts",
+    "rootDir": "/home/norman/Repos/GPlan/tests/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 2
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/home/norman/Repos/GPlan/.omo/evidence/release/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "",
+        "name": "",
+        "testDir": "/home/norman/Repos/GPlan/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": ".omo/evidence/release/results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.63.0",
+    "workers": 2,
+    "webServer": {
+      "command": "bun run build && bun run preview --host 127.0.0.1 --port 4173 --strictPort",
+      "url": "http://127.0.0.1:4173",
+      "reuseExistingServer": false,
+      "timeout": 120000
+    }
+  },
+  "suites": [
+    {
+      "title": "providers.spec.js",
+      "file": "providers.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "gemini real adapter discovery preview errors and secret boundary",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 13220,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "open fresh provider fixture context",
+                      "duration": 149
+                    },
+                    {
+                      "title": "click Add Bodyweight squat to plan",
+                      "duration": 467
+                    },
+                    {
+                      "title": "click View plan",
+                      "duration": 1505
+                    },
+                    {
+                      "title": "fill Plan name: Existing manual plan",
+                      "duration": 21
+                    },
+                    {
+                      "title": "click Settings",
+                      "duration": 271
+                    },
+                    {
+                      "title": "select Provider: gemini",
+                      "duration": 19
+                    },
+                    {
+                      "title": "fill API key: [memory-only sentinel]",
+                      "duration": 30
+                    },
+                    {
+                      "title": "click Discover models",
+                      "duration": 55
+                    },
+                    {
+                      "title": "select Discovered models: models/release-second-page",
+                      "duration": 11
+                    },
+                    {
+                      "title": "click Save AI preferences",
+                      "duration": 96
+                    },
+                    {
+                      "title": "click Plan",
+                      "duration": 47
+                    },
+                    {
+                      "title": "click Plan with AI",
+                      "duration": 64
+                    },
+                    {
+                      "title": "select Days per week: 1",
+                      "duration": 14
+                    },
+                    {
+                      "title": "select Exercises per day: 3",
+                      "duration": 18
+                    },
+                    {
+                      "title": "click Generate preview",
+                      "duration": 1088
+                    },
+                    {
+                      "title": "click Accept plan",
+                      "duration": 472
+                    },
+                    {
+                      "title": "click Dismiss notification",
+                      "duration": 337
+                    },
+                    {
+                      "title": "click Plan with AI",
+                      "duration": 80
+                    },
+                    {
+                      "title": "select Days per week: 1",
+                      "duration": 17
+                    },
+                    {
+                      "title": "select Exercises per day: 3",
+                      "duration": 10
+                    },
+                    {
+                      "title": "click Generate preview",
+                      "duration": 492
+                    },
+                    {
+                      "title": "click Close dialog",
+                      "duration": 58
+                    },
+                    {
+                      "title": "click Plan with AI",
+                      "duration": 344
+                    },
+                    {
+                      "title": "select Days per week: 1",
+                      "duration": 24
+                    },
+                    {
+                      "title": "select Exercises per day: 3",
+                      "duration": 14
+                    },
+                    {
+                      "title": "click Generate preview",
+                      "duration": 888
+                    },
+                    {
+                      "title": "click Close dialog",
+                      "duration": 70
+                    },
+                    {
+                      "title": "click Settings",
+                      "duration": 364
+                    },
+                    {
+                      "title": "click Export JSON backup",
+                      "duration": 73
+                    },
+                    {
+                      "title": "reload clears in-memory API key",
+                      "duration": 66
+                    },
+                    {
+                      "title": "click Settings",
+                      "duration": 298
+                    }
+                  ],
+                  "startTime": "2026-09-12T06:33:24.859Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "bcc9db1fadb5437cf395-8773a241e4ac56803ce3",
+          "file": "providers.spec.js",
+          "line": 16,
+          "column": 3
+        },
+        {
+          "title": "openai-compatible real adapter discovery preview errors and secret boundary",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 11483,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "open fresh provider fixture context",
+                      "duration": 166
+                    },
+                    {
+                      "title": "click Add Bodyweight squat to plan",
+                      "duration": 492
+                    },
+                    {
+                      "title": "click View plan",
+                      "duration": 177
+                    },
+                    {
+                      "title": "fill Plan name: Existing manual plan",
+                      "duration": 23
+                    },
+                    {
+                      "title": "click Settings",
+                      "duration": 141
+                    },
+                    {
+                      "title": "select Provider: openai-compatible",
+                      "duration": 18
+                    },
+                    {
+                      "title": "fill Provider root URL: https://gplan-fixture.invalid/api/v1",
+                      "duration": 35
+                    },
+                    {
+                      "title": "fill API key: [memory-only sentinel]",
+                      "duration": 21
+                    },
+                    {
+                      "title": "click Discover models",
+                      "duration": 47
+                    },
+                    {
+                      "title": "select Discovered models: release-fixture-model",
+                      "duration": 18
+                    },
+                    {
+                      "title": "click Save AI preferences",
+                      "duration": 70
+                    },
+                    {
+                      "title": "click Plan",
+                      "duration": 52
+                    },
+                    {
+                      "title": "click Plan with AI",
+                      "duration": 60
+                    },
+                    {
+                      "title": "select Days per week: 1",
+                      "duration": 13
+                    },
+                    {
+                      "title": "select Exercises per day: 3",
+                      "duration": 22
+                    },
+                    {
+                      "title": "click Generate preview",
+                      "duration": 1027
+                    },
+                    {
+                      "title": "click Accept plan",
+                      "duration": 373
+                    },
+                    {
+                      "title": "click Dismiss notification",
+                      "duration": 71
+                    },
+                    {
+                      "title": "click Plan with AI",
+                      "duration": 64
+                    },
+                    {
+                      "title": "select Days per week: 1",
+                      "duration": 19
+                    },
+                    {
+                      "title": "select Exercises per day: 3",
+                      "duration": 18
+                    },
+                    {
+                      "title": "click Generate preview",
+                      "duration": 1114
+                    },
+                    {
+                      "title": "click Close dialog",
+                      "duration": 57
+                    },
+                    {
+                      "title": "click Plan with AI",
+                      "duration": 328
+                    },
+                    {
+                      "title": "select Days per week: 1",
+                      "duration": 12
+                    },
+                    {
+                      "title": "select Exercises per day: 3",
+                      "duration": 11
+                    },
+                    {
+                      "title": "click Generate preview",
+                      "duration": 665
+                    },
+                    {
+                      "title": "click Close dialog",
+                      "duration": 38
+                    },
+                    {
+                      "title": "click Settings",
+                      "duration": 310
+                    },
+                    {
+                      "title": "click Export JSON backup",
+                      "duration": 36
+                    },
+                    {
+                      "title": "reload clears in-memory API key",
+                      "duration": 73
+                    },
+                    {
+                      "title": "click Settings",
+                      "duration": 217
+                    },
+                    {
+                      "title": "fill Provider root URL: http://provider.example/v1",
+                      "duration": 27
+                    },
+                    {
+                      "title": "click Save AI preferences",
+                      "duration": 38
+                    },
+                    {
+                      "title": "fill Provider root URL: http://localhost:11434/v1",
+                      "duration": 15
+                    },
+                    {
+                      "title": "click Save AI preferences",
+                      "duration": 44
+                    },
+                    {
+                      "title": "reload saved localhost URL",
+                      "duration": 60
+                    },
+                    {
+                      "title": "click Settings",
+                      "duration": 234
+                    }
+                  ],
+                  "startTime": "2026-09-12T06:33:38.364Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "bcc9db1fadb5437cf395-f66e1c6f907ba6f2add6",
+          "file": "providers.spec.js",
+          "line": 16,
+          "column": 3
+        }
+      ]
+    },
+    {
+      "title": "release.spec.js",
+      "file": "release.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "mobile plan edit swap and persistence",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 6817,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "open production app",
+                      "duration": 145
+                    },
+                    {
+                      "title": "click Chest",
+                      "duration": 482
+                    },
+                    {
+                      "title": "select Filter equipment: dumbbells",
+                      "duration": 26
+                    },
+                    {
+                      "title": "enable My gym only",
+                      "duration": 139
+                    },
+                    {
+                      "title": "open Dumbbell bench press",
+                      "duration": 1046,
+                      "steps": [
+                        {
+                          "title": "click View Dumbbell bench press",
+                          "duration": 1046
+                        }
+                      ]
+                    },
+                    {
+                      "title": "click Add to plan",
+                      "duration": 276
+                    },
+                    {
+                      "title": "click View plan",
+                      "duration": 169
+                    },
+                    {
+                      "title": "fill Plan name: Release strength",
+                      "duration": 29
+                    },
+                    {
+                      "title": "fill Sets: 4",
+                      "duration": 17
+                    },
+                    {
+                      "title": "click Swap exercise",
+                      "duration": 149
+                    },
+                    {
+                      "title": "choose compatible Dumbbell floor press",
+                      "duration": 95
+                    },
+                    {
+                      "title": "reload saved mobile plan",
+                      "duration": 206
+                    },
+                    {
+                      "title": "click Plan",
+                      "duration": 632
+                    }
+                  ],
+                  "startTime": "2026-09-12T06:33:24.852Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "aab01f8421c2dc9eca4a-8e713c955ca54cd886e3",
+          "file": "release.spec.js",
+          "line": 6,
+          "column": 1
+        },
+        {
+          "title": "offline cold lazy graphics and imported null active plan",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 6338,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "open fresh app without any online exercise detail",
+                      "duration": 161
+                    },
+                    {
+                      "title": "click Settings",
+                      "duration": 447
+                    },
+                    {
+                      "title": "fill Backup JSON: {\"schemaVersion\":1,\"gym\":{\"availableEquipment\":[\"dumbbells\",\"bench\"]},\"activePlanId\":null,\"aiPreferences\":null,\"plans\":[{\"id\":\"imported-plan\",\"name\":\"Imported empty session\",\"source\":\"manual\",\"createdAt\":\"2026-09-12T00:00:00.000Z\",\"updatedAt\":\"2026-09-12T00:00:00.000Z\",\"days\":[{\"id\":\"imported-day\",\"name\":\"Empty day\",\"items\":[]}]}]}",
+                      "duration": 45
+                    },
+                    {
+                      "title": "click Import backup",
+                      "duration": 91
+                    },
+                    {
+                      "title": "click Plan",
+                      "duration": 97
+                    },
+                    {
+                      "title": "click Add a movement",
+                      "duration": 327
+                    },
+                    {
+                      "title": "click Add Dumbbell bench press to plan",
+                      "duration": 110
+                    },
+                    {
+                      "title": "click View plan",
+                      "duration": 240
+                    },
+                    {
+                      "title": "click Settings",
+                      "duration": 101
+                    },
+                    {
+                      "title": "fill Manual model ID: offline-fixture",
+                      "duration": 28
+                    },
+                    {
+                      "title": "click Save AI preferences",
+                      "duration": 75
+                    },
+                    {
+                      "title": "await activated controller online",
+                      "duration": 11
+                    },
+                    {
+                      "title": "set isolated context offline and await offline event",
+                      "duration": 20
+                    },
+                    {
+                      "title": "reload shell offline; native browser offline state; uncached network blocked",
+                      "duration": 313
+                    },
+                    {
+                      "title": "click Plan",
+                      "duration": 109
+                    },
+                    {
+                      "title": "click Exercises",
+                      "duration": 142
+                    },
+                    {
+                      "title": "first ever detail and lazy graphics import offline: Bodyweight squat",
+                      "duration": 233,
+                      "steps": [
+                        {
+                          "title": "click View Bodyweight squat",
+                          "duration": 231
+                        }
+                      ]
+                    },
+                    {
+                      "title": "click Add to plan",
+                      "duration": 124
+                    },
+                    {
+                      "title": "click View plan",
+                      "duration": 149
+                    },
+                    {
+                      "title": "fill Plan name: Saved without a network",
+                      "duration": 15
+                    },
+                    {
+                      "title": "edit first item to 4 sets offline",
+                      "duration": 26
+                    },
+                    {
+                      "title": "reload edited plan offline; native browser offline state; uncached network blocked",
+                      "duration": 313
+                    },
+                    {
+                      "title": "click Plan",
+                      "duration": 218
+                    },
+                    {
+                      "title": "click Plan with AI",
+                      "duration": 38
+                    },
+                    {
+                      "title": "click Close dialog",
+                      "duration": 123
+                    },
+                    {
+                      "title": "click Exercises",
+                      "duration": 134
+                    },
+                    {
+                      "title": "click Plan",
+                      "duration": 84
+                    },
+                    {
+                      "title": "click Settings",
+                      "duration": 48
+                    }
+                  ],
+                  "startTime": "2026-09-12T06:33:31.927Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "aab01f8421c2dc9eca4a-634878e2610e95f7249e",
+          "file": "release.spec.js",
+          "line": 41,
+          "column": 1
+        },
+        {
+          "title": "desktop surfaces and same canvas responsive camera",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 8011,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "open desktop production app",
+                      "duration": 194
+                    },
+                    {
+                      "title": "click Plan",
+                      "duration": 132
+                    },
+                    {
+                      "title": "click Settings",
+                      "duration": 162
+                    },
+                    {
+                      "title": "click Exercises",
+                      "duration": 126
+                    },
+                    {
+                      "title": "open desktop Dumbbell curl",
+                      "duration": 278,
+                      "steps": [
+                        {
+                          "title": "click View Dumbbell curl",
+                          "duration": 277
+                        }
+                      ]
+                    },
+                    {
+                      "title": "resize mounted desktop canvas to 375",
+                      "duration": 111
+                    },
+                    {
+                      "title": "use side camera on retained canvas",
+                      "duration": 180,
+                      "steps": [
+                        {
+                          "title": "click side view",
+                          "duration": 179
+                        }
+                      ]
+                    }
+                  ],
+                  "startTime": "2026-09-12T06:33:38.292Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "aab01f8421c2dc9eca4a-47500f58ebfd4878888d",
+          "file": "release.spec.js",
+          "line": 104,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-09-12T06:33:20.431Z",
+    "duration": 29538.807,
+    "expected": 5,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

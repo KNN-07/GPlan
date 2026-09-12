@@ -1,0 +1,20 @@
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+  assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth))
+
+    at file:///home/norman/Repos/GPlan/.omo/evidence/core-verification/browser.mjs:73:10 {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '==',
+  diff: 'simple'
+}
+
+Node.js v24.20.0
+
+COMMAND_EXIT=1

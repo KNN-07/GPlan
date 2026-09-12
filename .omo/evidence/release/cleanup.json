@@ -1,0 +1,30 @@
+{
+  "scope": "release acceptance only; no persistent user profile used",
+  "testContexts": [
+    {
+      "test": "desktop surfaces and same canvas responsive camera",
+      "closed": true
+    },
+    {
+      "test": "gemini real adapter discovery preview errors and secret boundary",
+      "closed": true
+    },
+    {
+      "test": "mobile plan edit swap and persistence",
+      "closed": true
+    },
+    {
+      "test": "offline cold lazy graphics and imported null active plan",
+      "closed": true
+    },
+    {
+      "test": "openai-compatible real adapter discovery preview errors and secret boundary",
+      "closed": true
+    }
+  ],
+  "exportedDownloadsDeleted": 2,
+  "port4173Listeners": "",
+  "remainingOwnedProcesses": [],
+  "patchTemporaryFiles": [],
+  "intentionalEvidenceRetained": true
+}

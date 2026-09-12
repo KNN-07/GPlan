@@ -1,0 +1,78 @@
+{
+  "test": "openai-compatible real adapter discovery preview errors and secret boundary",
+  "actions": [
+    {
+      "action": "open fresh provider fixture context",
+      "completed": true
+    },
+    {
+      "action": "click Add Bodyweight squat to plan",
+      "completed": true
+    },
+    {
+      "action": "click View plan",
+      "completed": true
+    },
+    {
+      "action": "fill Plan name: Existing manual plan",
+      "completed": true
+    },
+    {
+      "action": "click Settings",
+      "completed": true
+    },
+    {
+      "action": "select Provider: openai-compatible",
+      "completed": true
+    },
+    {
+      "action": "fill Provider root URL: https://gplan-fixture.invalid/api/v1",
+      "completed": true
+    },
+    {
+      "action": "fill API key: [memory-only sentinel]",
+      "completed": true
+    },
+    {
+      "action": "click Discover models",
+      "completed": true
+    },
+    {
+      "action": "select Discovered models: release-fixture-model",
+      "completed": true
+    },
+    {
+      "action": "click Save AI preferences",
+      "completed": true
+    },
+    {
+      "action": "click Plan",
+      "completed": true
+    },
+    {
+      "action": "click Plan with AI",
+      "completed": true
+    },
+    {
+      "action": "select Days per week: 1",
+      "completed": true
+    },
+    {
+      "action": "select Exercises per day: 3",
+      "completed": true
+    },
+    {
+      "action": "click Generate preview",
+      "completed": true
+    }
+  ],
+  "screenshots": [
+    ".omo/evidence/release/openai-compatible-real-adapter-discovery-preview-errors-and-secret-boundary/discovered-selected-saved.png",
+    ".omo/evidence/release/openai-compatible-real-adapter-discovery-preview-errors-and-secret-boundary/failure.png"
+  ],
+  "pageErrors": [],
+  "consoleErrors": [],
+  "requests": [],
+  "contextClosed": true,
+  "status": "failed"
+}

@@ -1,0 +1,11 @@
+{
+  "exercises": 158,
+  "uniqueIds": 158,
+  "uniqueNames": 158,
+  "primaryMuscles": 11,
+  "equipment": 24,
+  "motionFamilies": 14,
+  "catalogPoseSamples": 948
+}
+
+COMMAND_EXIT=0

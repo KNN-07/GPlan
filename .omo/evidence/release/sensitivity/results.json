@@ -1,0 +1,222 @@
+{
+  "config": {
+    "argv": [
+      "/home/norman/.nvm/versions/node/v24.20.0/bin/node",
+      "/home/norman/Repos/GPlan/node_modules/.bin/playwright",
+      "test",
+      "--grep",
+      "openai-compatible real"
+    ],
+    "configFile": "/home/norman/Repos/GPlan/playwright.config.ts",
+    "rootDir": "/home/norman/Repos/GPlan/tests/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/home/norman/Repos/GPlan/.omo/evidence/release/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "/home/norman/Repos/GPlan/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": ".omo/evidence/release/results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.63.0",
+    "workers": 2,
+    "webServer": {
+      "command": "bun run build && bun run preview --host 127.0.0.1 --port 4173 --strictPort",
+      "url": "http://127.0.0.1:4173",
+      "reuseExistingServer": false,
+      "timeout": 120000
+    }
+  },
+  "suites": [
+    {
+      "title": "providers.spec.js",
+      "file": "providers.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "openai-compatible real adapter discovery preview errors and secret boundary",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 8984,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('button', { name: 'Accept plan', exact: true })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByRole('button', { name: 'Accept plan', exact: true }) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: 'Accept plan', exact: true })\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('button', { name: 'Accept plan', exact: true })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByRole('button', { name: 'Accept plan', exact: true }) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: 'Accept plan', exact: true })\u001b[22m\n\n    at /home/norman/Repos/GPlan/tests/e2e/providers.spec.js:82:82",
+                    "location": {
+                      "file": "/home/norman/Repos/GPlan/tests/e2e/providers.spec.js",
+                      "column": 82,
+                      "line": 82
+                    },
+                    "snippet": "  80 |     await qa.select('Exercises per day', '3');\n  81 |     await qa.click('Generate preview');\n> 82 |     await expect(page.getByRole('button', { name: 'Accept plan', exact: true })).toBeVisible();\n     |                                                                                  ^\n  83 |     await expect(page.locator('.ai-preview li')).toHaveCount(3);\n  84 |     expect(await savedState(page)).toEqual(beforePreview);\n  85 |     await page.getByRole('button', { name: 'Accept plan', exact: true }).scrollIntoViewIfNeeded();"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/home/norman/Repos/GPlan/tests/e2e/providers.spec.js",
+                        "column": 82,
+                        "line": 82
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('button', { name: 'Accept plan', exact: true })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByRole('button', { name: 'Accept plan', exact: true }) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: 'Accept plan', exact: true })\u001b[22m\n\n\n  80 |     await qa.select('Exercises per day', '3');\n  81 |     await qa.click('Generate preview');\n> 82 |     await expect(page.getByRole('button', { name: 'Accept plan', exact: true })).toBeVisible();\n     |                                                                                  ^\n  83 |     await expect(page.locator('.ai-preview li')).toHaveCount(3);\n  84 |     expect(await savedState(page)).toEqual(beforePreview);\n  85 |     await page.getByRole('button', { name: 'Accept plan', exact: true }).scrollIntoViewIfNeeded();\n    at /home/norman/Repos/GPlan/tests/e2e/providers.spec.js:82:82"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "open fresh provider fixture context",
+                      "duration": 105
+                    },
+                    {
+                      "title": "click Add Bodyweight squat to plan",
+                      "duration": 348
+                    },
+                    {
+                      "title": "click View plan",
+                      "duration": 1152
+                    },
+                    {
+                      "title": "fill Plan name: Existing manual plan",
+                      "duration": 16
+                    },
+                    {
+                      "title": "click Settings",
+                      "duration": 113
+                    },
+                    {
+                      "title": "select Provider: openai-compatible",
+                      "duration": 12
+                    },
+                    {
+                      "title": "fill Provider root URL: https://gplan-fixture.invalid/api/v1",
+                      "duration": 11
+                    },
+                    {
+                      "title": "fill API key: [memory-only sentinel]",
+                      "duration": 13
+                    },
+                    {
+                      "title": "click Discover models",
+                      "duration": 47
+                    },
+                    {
+                      "title": "select Discovered models: release-fixture-model",
+                      "duration": 9
+                    },
+                    {
+                      "title": "click Save AI preferences",
+                      "duration": 47
+                    },
+                    {
+                      "title": "click Plan",
+                      "duration": 46
+                    },
+                    {
+                      "title": "click Plan with AI",
+                      "duration": 59
+                    },
+                    {
+                      "title": "select Days per week: 1",
+                      "duration": 8
+                    },
+                    {
+                      "title": "select Exercises per day: 3",
+                      "duration": 6
+                    },
+                    {
+                      "title": "click Generate preview",
+                      "duration": 757
+                    }
+                  ],
+                  "startTime": "2026-09-12T06:25:07.293Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/home/norman/Repos/GPlan/.omo/evidence/release/test-results/providers-openai-compatibl-74171--errors-and-secret-boundary/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/home/norman/Repos/GPlan/tests/e2e/providers.spec.js",
+                    "column": 82,
+                    "line": 82
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "bcc9db1fadb5437cf395-f66e1c6f907ba6f2add6",
+          "file": "providers.spec.js",
+          "line": 16,
+          "column": 3
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-09-12T06:25:02.912Z",
+    "duration": 13938.355,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}

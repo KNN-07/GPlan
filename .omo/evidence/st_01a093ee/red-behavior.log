@@ -1,0 +1,510 @@
+$ vitest run --maxWorkers=4 --exclude=e2e/** src/ai --globals
+
+ RUN  v5.0.0 /home/norman/Repos/GPlan
+
+ ❯ src/ai/validation.test.ts (36 tests | 36 failed) 69ms
+   ❯ strict plan parsing (36)
+     × accepts a complete JSON document or enclosing fence 14ms
+     × accepts a complete JSON document or enclosing fence 2ms
+     × accepts a complete JSON document or enclosing fence 2ms
+     × rejects unknown exercise from the provider 10ms
+     × rejects unavailable exercise from the provider 1ms
+     × rejects missing ID from the provider 1ms
+     × rejects empty ID from the provider 1ms
+     × rejects wrong kind from the provider 1ms
+     × rejects zero sets from the provider 1ms
+     × rejects fractional sets from the provider 1ms
+     × rejects excessive sets from the provider 1ms
+     × rejects string sets from the provider 1ms
+     × rejects negative rest from the provider 1ms
+     × rejects excessive rest from the provider 1ms
+     × rejects fractional rest from the provider 1ms
+     × rejects reversed reps from the provider 1ms
+     × rejects zero reps from the provider 1ms
+     × rejects excessive reps from the provider 2ms
+     × rejects fractional reps from the provider 2ms
+     × rejects zero duration from the provider 1ms
+     × rejects excessive duration from the provider 1ms
+     × rejects extra prescription fields from the provider 1ms
+     × rejects extra item fields from the provider 1ms
+     × rejects extra plan fields from the provider 1ms
+     × rejects blank plan name from the provider 2ms
+     × rejects blank day name from the provider 1ms
+     × rejects wrong day count from the provider 1ms
+     × rejects too many days from the provider 1ms
+     × rejects wrong item count from the provider 1ms
+     × rejects duplicate daily exercises from the provider 3ms
+     × does not repair malformed or nonfinite JSON 1ms
+     × does not repair malformed or nonfinite JSON 1ms
+     × does not repair malformed or nonfinite JSON 1ms
+     × does not repair malformed or nonfinite JSON 1ms
+     × does not repair malformed or nonfinite JSON 1ms
+     × does not repair malformed or nonfinite JSON 1ms
+ ❯ src/ai/failures.test.ts (23 tests | 16 failed) 72ms
+   × maps HTTP 401 to authentication without exposing provider content 30ms
+   × maps HTTP 403 to authentication without exposing provider content 6ms
+   × maps HTTP 429 to rate-limit without exposing provider content 3ms
+   × maps HTTP 500 to provider without exposing provider content 2ms
+   × rejects malformed discovery responses 2ms
+   × rejects malformed discovery responses 2ms
+   × rejects malformed discovery responses 2ms
+   × rejects malformed discovery responses 2ms
+   × rejects malformed generation envelopes 2ms
+   × rejects malformed generation envelopes 2ms
+   × rejects malformed generation envelopes 1ms
+   × maps a disconnected HTTP fixture to a network error 2ms
+   × maps browser CORS failure to a sanitized network error 3ms
+   × aborts in-flight discovery on the exact request event 1ms
+   × aborts in-flight generation on the exact request event 1ms
+   × rejects a pre-aborted signal before sending a request 2ms
+ ❯ src/ai/providers.test.ts (9 tests | 9 failed) 46ms
+   ❯ OpenAI-compatible wire interface (5)
+     × preserves API root with trailing slash  when discovering models 22ms
+     × preserves API root with trailing slash / when discovering models 4ms
+     × preserves API root with trailing slash /// when discovering models 1ms
+     × generates with an undiscovered manual model when provided directly 1ms
+     × omits authentication when a local server uses no API key 1ms
+   ❯ Gemini wire interface (4)
+     × paginates and filters generateContent models when discovering 1ms
+     × generates with manual model gemini-manual without discovery 1ms
+     × generates with manual model models/gemini-manual without discovery 1ms
+     × rejects repeated pagination tokens rather than looping 10ms
+
+⎯⎯⎯⎯⎯⎯ Failed Tests 61 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/ai/failures.test.ts > maps HTTP 401 to authentication without exposing provider content
+AssertionError: expected AiError: Not implemented { …(2) } to match object { code: 'authentication', status: 401 }
+(1 matching property omitted from actual)
+
+- Expected
++ Received
+
+- {
+-   "code": "authentication",
+-   "status": 401,
++ AiError {
++   "code": "provider",
++   "status": undefined,
+  }
+
+ ❯ src/ai/failures.test.ts:19:23
+     17|   // Then
+     18|   await expect(result).rejects.toBeInstanceOf(AiError);
+     19|   await expect(result).rejects.toMatchObject({ code, status });
+       |                       ^
+     20|   await expect(result).rejects.not.toHaveProperty('message', expect.st…
+     21| });
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/61]⎯
+
+ FAIL  src/ai/failures.test.ts > maps HTTP 403 to authentication without exposing provider content
+AssertionError: expected AiError: Not implemented { …(2) } to match object { code: 'authentication', status: 403 }
+(1 matching property omitted from actual)
+
+- Expected
++ Received
+
+- {
+-   "code": "authentication",
+-   "status": 403,
++ AiError {
++   "code": "provider",
++   "status": undefined,
+  }
+
+ ❯ src/ai/failures.test.ts:19:23
+     17|   // Then
+     18|   await expect(result).rejects.toBeInstanceOf(AiError);
+     19|   await expect(result).rejects.toMatchObject({ code, status });
+       |                       ^
+     20|   await expect(result).rejects.not.toHaveProperty('message', expect.st…
+     21| });
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/61]⎯
+
+ FAIL  src/ai/failures.test.ts > maps HTTP 429 to rate-limit without exposing provider content
+AssertionError: expected AiError: Not implemented { …(2) } to match object { code: 'rate-limit', status: 429 }
+(1 matching property omitted from actual)
+
+- Expected
++ Received
+
+- {
+-   "code": "rate-limit",
+-   "status": 429,
++ AiError {
++   "code": "provider",
++   "status": undefined,
+  }
+
+ ❯ src/ai/failures.test.ts:19:23
+     17|   // Then
+     18|   await expect(result).rejects.toBeInstanceOf(AiError);
+     19|   await expect(result).rejects.toMatchObject({ code, status });
+       |                       ^
+     20|   await expect(result).rejects.not.toHaveProperty('message', expect.st…
+     21| });
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[3/61]⎯
+
+ FAIL  src/ai/failures.test.ts > maps HTTP 500 to provider without exposing provider content
+AssertionError: expected AiError: Not implemented { …(2) } to match object { code: 'provider', status: 500 }
+(1 matching property omitted from actual)
+
+- Expected
++ Received
+
+- {
++ AiError {
+    "code": "provider",
+-   "status": 500,
++   "status": undefined,
+  }
+
+ ❯ src/ai/failures.test.ts:19:23
+     17|   // Then
+     18|   await expect(result).rejects.toBeInstanceOf(AiError);
+     19|   await expect(result).rejects.toMatchObject({ code, status });
+       |                       ^
+     20|   await expect(result).rejects.not.toHaveProperty('message', expect.st…
+     21| });
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[4/61]⎯
+
+ FAIL  src/ai/failures.test.ts > rejects malformed discovery responses
+ FAIL  src/ai/failures.test.ts > rejects malformed discovery responses
+ FAIL  src/ai/failures.test.ts > rejects malformed discovery responses
+ FAIL  src/ai/failures.test.ts > rejects malformed discovery responses
+AssertionError: expected AiError: Not implemented { …(2) } to match object { code: 'invalid-response' }
+(2 matching properties omitted from actual)
+
+- Expected
++ Received
+
+- {
+-   "code": "invalid-response",
++ AiError {
++   "code": "provider",
+  }
+
+ ❯ src/ai/failures.test.ts:27:42
+     25|   fixture.respond = () => reply;
+     26|   // When / Then
+     27|   await expect(discoverModels(options())).rejects.toMatchObject({ code…
+       |                                          ^
+     28| });
+     29|
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[5/61]⎯
+
+ FAIL  src/ai/failures.test.ts > rejects malformed generation envelopes
+ FAIL  src/ai/failures.test.ts > rejects malformed generation envelopes
+ FAIL  src/ai/failures.test.ts > rejects malformed generation envelopes
+AssertionError: expected AiError: Not implemented { …(2) } to match object { code: 'invalid-response' }
+(2 matching properties omitted from actual)
+
+- Expected
++ Received
+
+- {
+-   "code": "invalid-response",
++ AiError {
++   "code": "provider",
+  }
+
+ ❯ src/ai/failures.test.ts:34:84
+     32|   fixture.respond = () => ({ body });
+     33|   // When / Then
+     34|   await expect(generatePlan({ ...options(), modelId: 'manual', request…
+       |                                                                                    ^
+     35| });
+     36|
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[6/61]⎯
+
+ FAIL  src/ai/failures.test.ts > maps a disconnected HTTP fixture to a network error
+AssertionError: expected AiError: Not implemented { …(2) } to match object { code: 'network' }
+(2 matching properties omitted from actual)
+
+- Expected
++ Received
+
+- {
+-   "code": "network",
++ AiError {
++   "code": "provider",
+  }
+
+ ❯ src/ai/failures.test.ts:50:42
+     48|   fixture.respond = () => ({ disconnect: true });
+     49|   // When / Then
+     50|   await expect(discoverModels(options())).rejects.toMatchObject({ code…
+       |                                          ^
+     51| });
+     52|
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[7/61]⎯
+
+ FAIL  src/ai/failures.test.ts > maps browser CORS failure to a sanitized network error
+AssertionError: expected AiError: Not implemented { …(2) } to match object { code: 'network', …(1) }
+(2 matching properties omitted from actual)
+
+- Expected
++ Received
+
+- {
+-   "code": "network",
+-   "message": undefined,
++ AiError {
++   "code": "provider",
+  }
+
+ ❯ src/ai/failures.test.ts:57:42
+     55|   vi.stubGlobal('fetch', vi.fn().mockRejectedValue(new TypeError('Fail…
+     56|   // When / Then
+     57|   await expect(discoverModels(options())).rejects.toMatchObject({ code…
+       |                                          ^
+     58| });
+     59|
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[8/61]⎯
+
+ FAIL  src/ai/failures.test.ts > aborts in-flight discovery on the exact request event
+ FAIL  src/ai/failures.test.ts > aborts in-flight generation on the exact request event
+AssertionError: expected AiError: Not implemented { …(2) } to match object { code: 'aborted' }
+(2 matching properties omitted from actual)
+
+- Expected
++ Received
+
+- {
+-   "code": "aborted",
++ AiError {
++   "code": "provider",
+  }
+
+ ❯ src/ai/failures.test.ts:69:34
+     67|     ? discoverModels({ ...options(), signal: controller.signal })
+     68|     : generatePlan({ ...options(), modelId: 'manual', request, catalog…
+     69|   const rejected = expect(result).rejects.toMatchObject({ code: 'abort…
+       |                                  ^
+     70|   // Then: observe both promises immediately, including the RED path.
+     71|   await Promise.all([received.then(() => controller.abort('private rea…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[9/61]⎯
+
+ FAIL  src/ai/failures.test.ts > rejects a pre-aborted signal before sending a request
+AssertionError: expected AiError: Not implemented { …(2) } to match object { code: 'aborted' }
+(2 matching properties omitted from actual)
+
+- Expected
++ Received
+
+- {
+-   "code": "aborted",
++ AiError {
++   "code": "provider",
+  }
+
+ ❯ src/ai/failures.test.ts:79:76
+     77|   controller.abort();
+     78|   // When / Then
+     79|   await expect(discoverModels({ ...options(), signal: controller.signa…
+       |                                                                            ^
+     80|   expect(fixture.requests).toHaveLength(0);
+     81| });
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[10/61]⎯
+
+ FAIL  src/ai/providers.test.ts > OpenAI-compatible wire interface > preserves API root with trailing slash  when discovering models
+ FAIL  src/ai/providers.test.ts > OpenAI-compatible wire interface > preserves API root with trailing slash / when discovering models
+ FAIL  src/ai/providers.test.ts > OpenAI-compatible wire interface > preserves API root with trailing slash /// when discovering models
+AiError: Not implemented
+ ❯ discoverModels src/ai/index.ts:16:9
+     14|
+     15| export async function discoverModels(_options: DiscoverOptions): Promi…
+     16|   throw new AiError('provider', 'Not implemented');
+       |         ^
+     17| }
+     18|
+ ❯ src/ai/providers.test.ts:30:26
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[11/61]⎯
+
+ FAIL  src/ai/providers.test.ts > OpenAI-compatible wire interface > generates with an undiscovered manual model when provided directly
+AiError: Not implemented
+ ❯ generatePlan src/ai/index.ts:20:9
+     18|
+     19| export async function generatePlan(_options: GenerateOptions): Promise…
+     20|   throw new AiError('provider', 'Not implemented');
+       |         ^
+     21| }
+     22|
+ ❯ src/ai/providers.test.ts:41:26
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[12/61]⎯
+
+ FAIL  src/ai/providers.test.ts > OpenAI-compatible wire interface > omits authentication when a local server uses no API key
+AiError: Not implemented
+ ❯ discoverModels src/ai/index.ts:16:9
+     14|
+     15| export async function discoverModels(_options: DiscoverOptions): Promi…
+     16|   throw new AiError('provider', 'Not implemented');
+       |         ^
+     17| }
+     18|
+ ❯ src/ai/providers.test.ts:63:18
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[13/61]⎯
+
+ FAIL  src/ai/providers.test.ts > Gemini wire interface > paginates and filters generateContent models when discovering
+AiError: Not implemented
+ ❯ discoverModels src/ai/index.ts:16:9
+     14|
+     15| export async function discoverModels(_options: DiscoverOptions): Promi…
+     16|   throw new AiError('provider', 'Not implemented');
+       |         ^
+     17| }
+     18|
+ ❯ src/ai/providers.test.ts:82:26
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[14/61]⎯
+
+ FAIL  src/ai/providers.test.ts > Gemini wire interface > generates with manual model gemini-manual without discovery
+ FAIL  src/ai/providers.test.ts > Gemini wire interface > generates with manual model models/gemini-manual without discovery
+AiError: Not implemented
+ ❯ generatePlan src/ai/index.ts:20:9
+     18|
+     19| export async function generatePlan(_options: GenerateOptions): Promise…
+     20|   throw new AiError('provider', 'Not implemented');
+       |         ^
+     21| }
+     22|
+ ❯ src/ai/providers.test.ts:100:18
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[15/61]⎯
+
+ FAIL  src/ai/providers.test.ts > Gemini wire interface > rejects repeated pagination tokens rather than looping
+AssertionError: expected AiError: Not implemented { …(2) } to match object { code: 'invalid-response' }
+(2 matching properties omitted from actual)
+
+- Expected
++ Received
+
+- {
+-   "code": "invalid-response",
++ AiError {
++   "code": "provider",
+  }
+
+ ❯ src/ai/providers.test.ts:114:77
+    112|     fixture.respond = () => ({ body: { models: [], nextPageToken: 'loo…
+    113|     // When / Then
+    114|     await expect(discoverModels({ config: { provider: 'gemini' }, apiK…
+       |                                                                             ^
+    115|     expect(fixture.requests).toHaveLength(2);
+    116|   });
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[16/61]⎯
+
+ FAIL  src/ai/validation.test.ts > strict plan parsing > accepts a complete JSON document or enclosing fence
+ FAIL  src/ai/validation.test.ts > strict plan parsing > accepts a complete JSON document or enclosing fence
+ FAIL  src/ai/validation.test.ts > strict plan parsing > accepts a complete JSON document or enclosing fence
+AiError: Not implemented
+ ❯ generatePlan src/ai/index.ts:20:9
+     18|
+     19| export async function generatePlan(_options: GenerateOptions): Promise…
+     20|   throw new AiError('provider', 'Not implemented');
+       |         ^
+     21| }
+     22|
+ ❯ generate src/ai/validation.test.ts:10:10
+ ❯ src/ai/validation.test.ts:26:18
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[17/61]⎯
+
+ FAIL  src/ai/validation.test.ts > strict plan parsing > rejects unknown exercise from the provider
+ FAIL  src/ai/validation.test.ts > strict plan parsing > rejects unavailable exercise from the provider
+ FAIL  src/ai/validation.test.ts > strict plan parsing > rejects missing ID from the provider
+ FAIL  src/ai/validation.test.ts > strict plan parsing > rejects empty ID from the provider
+ FAIL  src/ai/validation.test.ts > strict plan parsing > rejects wrong kind from the provider
+ FAIL  src/ai/validation.test.ts > strict plan parsing > rejects zero sets from the provider
+ FAIL  src/ai/validation.test.ts > strict plan parsing > rejects fractional sets from the provider
+ FAIL  src/ai/validation.test.ts > strict plan parsing > rejects excessive sets from the provider
+ FAIL  src/ai/validation.test.ts > strict plan parsing > rejects string sets from the provider
+ FAIL  src/ai/validation.test.ts > strict plan parsing > rejects negative rest from the provider
+ FAIL  src/ai/validation.test.ts > strict plan parsing > rejects excessive rest from the provider
+ FAIL  src/ai/validation.test.ts > strict plan parsing > rejects fractional rest from the provider
+ FAIL  src/ai/validation.test.ts > strict plan parsing > rejects reversed reps from the provider
+ FAIL  src/ai/validation.test.ts > strict plan parsing > rejects zero reps from the provider
+ FAIL  src/ai/validation.test.ts > strict plan parsing > rejects excessive reps from the provider
+ FAIL  src/ai/validation.test.ts > strict plan parsing > rejects fractional reps from the provider
+ FAIL  src/ai/validation.test.ts > strict plan parsing > rejects zero duration from the provider
+ FAIL  src/ai/validation.test.ts > strict plan parsing > rejects excessive duration from the provider
+ FAIL  src/ai/validation.test.ts > strict plan parsing > rejects extra prescription fields from the provider
+ FAIL  src/ai/validation.test.ts > strict plan parsing > rejects extra item fields from the provider
+ FAIL  src/ai/validation.test.ts > strict plan parsing > rejects extra plan fields from the provider
+ FAIL  src/ai/validation.test.ts > strict plan parsing > rejects blank plan name from the provider
+ FAIL  src/ai/validation.test.ts > strict plan parsing > rejects blank day name from the provider
+ FAIL  src/ai/validation.test.ts > strict plan parsing > rejects wrong day count from the provider
+ FAIL  src/ai/validation.test.ts > strict plan parsing > rejects too many days from the provider
+ FAIL  src/ai/validation.test.ts > strict plan parsing > rejects wrong item count from the provider
+ FAIL  src/ai/validation.test.ts > strict plan parsing > rejects duplicate daily exercises from the provider
+AssertionError: expected AiError: Not implemented { …(2) } to match object { name: 'AiError', …(1) }
+(1 matching property omitted from actual)
+
+- Expected
++ Received
+
+- {
+-   "code": "invalid-response",
++ AiError {
++   "code": "provider",
+    "name": "AiError",
+  }
+
+ ❯ src/ai/validation.test.ts:61:29
+     59|     fixture.respond = () => ({ body: completion(JSON.stringify(respons…
+     60|     // When / Then
+     61|     await expect(generate()).rejects.toMatchObject({ name: 'AiError', …
+       |                             ^
+     62|   });
+     63|
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[18/61]⎯
+
+ FAIL  src/ai/validation.test.ts > strict plan parsing > does not repair malformed or nonfinite JSON
+ FAIL  src/ai/validation.test.ts > strict plan parsing > does not repair malformed or nonfinite JSON
+ FAIL  src/ai/validation.test.ts > strict plan parsing > does not repair malformed or nonfinite JSON
+ FAIL  src/ai/validation.test.ts > strict plan parsing > does not repair malformed or nonfinite JSON
+ FAIL  src/ai/validation.test.ts > strict plan parsing > does not repair malformed or nonfinite JSON
+ FAIL  src/ai/validation.test.ts > strict plan parsing > does not repair malformed or nonfinite JSON
+AssertionError: expected AiError: Not implemented { …(2) } to match object { code: 'invalid-response' }
+(2 matching properties omitted from actual)
+
+- Expected
++ Received
+
+- {
+-   "code": "invalid-response",
++ AiError {
++   "code": "provider",
+  }
+
+ ❯ src/ai/validation.test.ts:74:29
+     72|     fixture.respond = () => ({ body: completion(content) });
+     73|     // When / Then
+     74|     await expect(generate()).rejects.toMatchObject({ code: 'invalid-re…
+       |                             ^
+     75|   });
+     76| });
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[19/61]⎯
+
+
+ Test Files  3 failed (3)
+      Tests  61 failed | 7 passed (68)
+   Start at  11:48:57
+   Duration  882ms (setup 39%, import 20%, tests 19%, transform 19%, worker 3%)
+
+error: script "test" exited with code 1
