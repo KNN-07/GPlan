@@ -132,9 +132,9 @@ test installation and offline behavior.
 React, TypeScript, Vite, Three.js / React Three Fiber, and `vite-plugin-pwa`.
 Exercise data and visualization assets are bundled locally.
 
-The verified baseline includes **211 unit tests** and **5 production-browser
-scenarios** covering saved swaps, cold offline 3D loading, responsive layouts,
-both AI adapters, error handling, and key-free backups.
+The automated checks include unit tests and production-browser scenarios covering
+exercise motion, floor and grip contacts, saved swaps, cold offline 3D loading,
+responsive layouts, both AI adapters, error handling, and key-free backups.
 
 ```sh
 bun run typecheck
@@ -151,5 +151,6 @@ AI integration is tested with HTTP fixtures; live provider availability and
 answer quality require your own credentials.
 
 The 3D views are procedural muscle and motion schematics, not recorded GIFs or
-technique-accurate demonstrations. Unsupported motions use static views.
+technique-accurate demonstrations. All 158 catalog exercises have exercise-specific
+motion or isometric hold poses, with corresponding equipment and supports.
 Exercise substitutions share training targets but are not biomechanically identical.

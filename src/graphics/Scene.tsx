@@ -9,16 +9,16 @@ import { palette } from './palette';
 
 export type View = 'three-quarter' | 'front' | 'side' | 'back';
 export type CameraCommand = { readonly view: View; readonly sequence: number };
-const positions: Record<View, Triple> = { 'three-quarter': [3.1, 2.2, 4.5], front: [0, 1.75, 5.5], side: [5.5, 1.75, 0], back: [0, 1.75, -5.5] };
+const positions: Record<View, Triple> = { 'three-quarter': [3.8, 2.7, 5.6], front: [0, 1.85, 6.8], side: [6.8, 1.85, 0], back: [0, 1.85, -6.8] };
 
 function CameraControls({ command, onContextLost }: { readonly command: CameraCommand; readonly onContextLost: () => void }) {
   const { camera, gl, invalidate } = useThree();
   useEffect(() => {
     const controls = new OrbitControls(camera, gl.domElement);
     controls.enableDamping = false; controls.enablePan = false;
-    controls.minDistance = 3.5; controls.maxDistance = 8;
+    controls.minDistance = 4.5; controls.maxDistance = 9;
     controls.minPolarAngle = .3; controls.maxPolarAngle = Math.PI / 2 + .12;
-    controls.target.set(0, 1.1, 0);
+    controls.target.set(0, 1.25, 0);
     function changed() { invalidate(); }
     controls.addEventListener('change', changed);
     camera.position.set(...positions[command.view]);
@@ -44,17 +44,17 @@ export function Scene({ exercise, active, command, onContextLost }: {
     <directionalLight position={[3, 6, 4]} intensity={3} castShadow shadow-mapSize={[1024, 1024]} shadow-camera-left={-3} shadow-camera-right={3} shadow-camera-top={4} shadow-camera-bottom={-3} shadow-normalBias={.04} />
     <directionalLight position={[-4, 3, -3]} intensity={2.2} color="#bfd0de" />
     <mesh position={[0, -.085, 0]} receiveShadow>
-      <cylinderGeometry args={[1.7, 1.76, .12, 64]} />
+      <cylinderGeometry args={[2.15, 2.21, .12, 64]} />
       <meshStandardMaterial color={palette.stage} roughness={.8} />
     </mesh>
     <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, -.02, 0]}>
-      <ringGeometry args={[1.65, 1.66, 80]} /><meshBasicMaterial color={palette.line} />
+      <ringGeometry args={[2.1, 2.11, 80]} /><meshBasicMaterial color={palette.line} />
     </mesh>
     <gridHelper args={[20, 40, palette.line, palette.stage]} position={[0, -.16, 0]} />
     <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, -.165, 0]} receiveShadow>
       <planeGeometry args={[100, 100]} /><meshStandardMaterial color={palette.scene} roughness={1} />
     </mesh>
-    <Equipment animation={exercise.animation} />
+    <Equipment exercise={exercise} />
     <Figure key={exercise.id} exercise={exercise} active={active} />
     <CameraControls command={command} onContextLost={onContextLost} />
   </>;
